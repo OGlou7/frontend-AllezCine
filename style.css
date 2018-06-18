@@ -1,0 +1,73 @@
+/*RESET CSS */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: white;
+  background-size: auto; }
+
+/*Header*/
+.my-nav {
+	position: absolute;
+	width: 100%;
+	z-index: 999;
+}
+
+.my-carousel {
+	position: absolute;
+	top: 0;
+}
+
+.banner {
+   opacity:0.8;
+   filter: alpha(opacity=180);
+}
+
+.subscription {
+	background-color: #FB4446;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.subscription p {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+/*Main-movies*/
+
+.main-movies {
+	margin-top: 25px; }
+
+.card-deck {
+	border: 0.5px solid lightgrey;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+.card-title {
+	font-size: 12px;
+	text-align: center;
+}
+
+.card-left {
+	font-size: 11px;
+	text-align: left;
+	position: absolute;
+}
+
+.card-right {
+	font-size: 11px;
+	text-align: right;
+	font-weight: bold;
+}
+
