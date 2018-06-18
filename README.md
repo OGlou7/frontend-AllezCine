@@ -4,7 +4,7 @@ README
 
 Projet à réaliser en 2 semaines (à partir du *18 Juin 2018*) durant formation BeCode (Team Johnson II).  
 
-Team de 2: Charlotte Tusset & Marie-Louise Ogdoc. 
+Team de 2: Charlotte Tusset & Marie Louise Ogdoc. 
 
 [Repo git avec consignes](https://github.com/becodeorg/Johnson2/tree/master/projets/AllezCine). 
 
