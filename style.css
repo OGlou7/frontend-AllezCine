@@ -11,7 +11,8 @@ html, body {
   display: block;
   height: 100%;
   width: 100%;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: white;
   background-size: auto; }
 
@@ -19,13 +20,14 @@ html, body {
 .my-nav {
 	position: absolute;
 	width: 100%;
-	z-index: 999;
+  z-index: 999;
 }
 
 .my-carousel {
 	position: absolute;
 	top: 0;
 }
+
 
 .banner {
    opacity:0.8;
@@ -71,3 +73,14 @@ html, body {
 	font-weight: bold;
 }
 
+.btn-group {
+  margin-left: 65px;
+}
+
+.btn-container{
+  text-align: center;
+}
+
+#demo {
+  margin-left: 100px;
+}
