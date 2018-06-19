@@ -7,3 +7,4 @@ function toggle_div_fun (id){
     divelement.style.display = 'none';
   }
 }
+ // btnTOP
