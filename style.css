@@ -52,6 +52,10 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
   border-radius: 25px;
   font-size: 10px;
  }
+ .form-inline .form-search:focus {
+    background: rgba(0, 0, 0, 0.5);
+    border:none;
+}
 
 .form-inline .fa-search {
   position: absolute;
