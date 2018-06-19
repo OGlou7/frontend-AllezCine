@@ -27,11 +27,42 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
   z-index: 999;
 }
 
+.main-brand { 
+  color: #FB4446;
+  font-size: 500px;
+}
+
+.my-nav a {color: #FB4446;}
+.my-nav a:hover {
+  color:white;
+  background-color:#FB4446; 
+}
+
+.my-nav .navbar-brand {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.navbar-brand strong {color: white;}
+
+.form-inline .form-search {
+  width: 250px !important;
+  height: 28px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  font-size: 10px;
+ }
+
+.form-inline .fa-search {
+  position: absolute;
+    right: 29px;
+}
+
+
 .my-carousel {
 	position: absolute;
 	top: 0;
 }
-
 
 .banner {
    opacity:0.8;
