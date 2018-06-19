@@ -77,10 +77,11 @@ html, body {
   margin-left: 65px;
 }
 
-.btn-container{
+.btn-container {
   text-align: center;
 }
 
-#demo {
+#demo , #demo2 {
   margin-left: 100px;
 }
+
