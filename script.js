@@ -30,4 +30,12 @@ $ (document).ready(function(){
 	});
 });
 
+//buttons more
+$(".btnplus").click(function() {
+    if ($(this).text() == "Less") {
+        $(this).text("More"); 
+    } else {
+        $(this).text("Less"); 
+    }; 
+});
 

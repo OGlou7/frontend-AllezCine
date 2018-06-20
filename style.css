@@ -22,7 +22,7 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
 
 /*Header*/
 .my-nav {
-	position: absolute;
+	position: fixed;
 	width: 100%;
   z-index: 999;
 }
@@ -95,7 +95,7 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
   color: #FB4446;
 }
 
-/*Main-movies*/
+/*Main-movies & Tv Shows*/
 
 .main-movies {
 	margin-top: 25px; }
@@ -125,14 +125,22 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
 
 .btn-group {
   margin-left: 65px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .btn-container {
   text-align: center;
 }
 
+.btnplus {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 #collapseMore, #collapseMoreTv {
   margin-left: 90px;
+  margin-right: 90px;
 }
 
 /*Social Media*/

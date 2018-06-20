@@ -16,19 +16,10 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	</head>
 
-	<!-- <script>
-	var agePrompt = prompt("What is your age?", 0 );
-	if (agePrompt>=18){ alert('Welcome!')
-	} else {
-	alert('Sorry! Come back in a few years!')
-	document.location="https://www.imdb.com";
-	};
-	</script> -->
-
 <body>
 	<header>
 		<div class="my-nav nav-container">
-			<nav class="navbar navbar-expand-lg">
+			<nav class="navbar navbar-expand-lg fixed-top">
 				<a class="navbar-brand main-brand" href="#">Allez<strong>cine!</strong></a>
 				  <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon fa fa-bars fa-1x"></span>
@@ -291,12 +282,12 @@
 		</div>
 		<!-- Button -->
 		<div class="btn-container">
-			<button type="button" class="btn btn-danger btnplus">More movies</button>
+			<button type="button" class="btn btn-danger btnplus" id="moreMovies">More</button>
 		</div>
 		<!-- More movies when clicking the button -->
 		<div class="row collapse" id="collapseMore">
-			<div class="col-1"></div>
-			<div class="col-10">
+			<div class="col"></div>
+			<div class="col">
 				<div class="card-deck">
 					<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
 						<div class="card-body">
@@ -342,7 +333,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-1"></div>
+			<div class="col"></div>
 		</div>
 
 	<!-- Featured TvShows -->
@@ -461,12 +452,12 @@
 		</div>
 		<!-- Button more Tv Shows -->
 		<div class="btn-container">
-			<button type="button" class="btn btn-danger btnplus">More Tv Shows</button>
+			<button type="button" class="btn btn-danger btnplus" id="moreTv">More</button>
 		</div>
 		<!-- More tv shows when clicking button -->
 		<div class="row collapse" id="collapseMoreTv">
-			<div class="col-1"></div>
-			<div class="col-10">
+			<div class="col"></div>
+			<div class="col">
 				<div class="card-deck">
 					<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
 						<div class="card-body">
@@ -512,7 +503,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-1"></div>
+			<div class="col"></div>
 		</div>
 		<!-- Shop Movies -->
 		<div class="title"><h1>Shop Movies</h1></div>
