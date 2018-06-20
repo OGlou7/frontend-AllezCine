@@ -18,8 +18,8 @@
 
 <body>
 	<header>
-		<div class="my-nav nav-container">
-			<nav class="navbar navbar-expand-lg fixed-top">
+		<section class="my-nav">
+			<nav class="navbar navbar-expand-lg sticky-top">
 				<a class="navbar-brand main-brand" href="#">Allez<strong>cine!</strong></a>
 				  <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon fa fa-bars fa-1x"></span>
@@ -60,7 +60,7 @@
 				    </form>
 				  </div>
 			</nav>
-		</div>
+		</section>
 		<div id="carouselExampleIndicators" class="my-carousel carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
 		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -169,7 +169,7 @@
 	</div>
 	<!-- Featured movies -->
 	<div class="featured-movies">
-		<div class="title"><h1>Featured Movies</h1></div>
+		<div class="title"><h2>Featured Movies</h2></div>
 		<div class="row">
 			<div class="btn-group" role="group" aria-label="Basic example">
 			  <button type="button" class="btn btn-danger">All</button>
@@ -338,18 +338,18 @@
 
 	<!-- Featured TvShows -->
 	<div class="featured-Tvshows">
-		<div class="title"><h1>Featured TV Shows</h1></div>
+		<div class="title"><h2>Featured TV Shows</h2></div>
 		<!-- Buttons with style -->
 		<div class="row">
-			<div class="btn-group" role="group" aria-label="Basic example">
-				<button type="button" class="btn btn-danger">All</button>
-				<button type="button" class="btn btn-danger">Action</button>
-				<button type="button" class="btn btn-danger">Comedy</button>
-				<button type="button" class="btn btn-danger">SciFi</button>
+			<div class="btn-group" role="group" aria-label="Basic example" id="myBtnContainer">
+				<button onclick="filterSelection('all')" type="button" class="btn btn-danger">All</button>
+				<button onclick="filterSelection('action')" type="button" class="btn btn-danger">Action</button>
+				<button onclick="filterSelection('comedy')" type="button" class="btn btn-danger">Comedy</button>
+				<button onclick="filterSelection('Scifi')" type="button" class="btn btn-danger">SciFi</button>
 			</div>
 		</div>
 		<!-- List of TvShows -->
-		<div class="row">
+		<div class="row rowTv action">
 			<div class="col-1"></div>
 			<div class="col-10">
 				<div class="card-deck">
@@ -400,7 +400,7 @@
 			<div class="col-1"></div>
 		</div>
 		<!-- Second row of Tv Shows -->
-		<div class="row">
+		<div class="row rowTv comedy">
 			<div class="col-1"></div>
 			<div class="col-10">
 				<div class="card-deck">
@@ -455,7 +455,7 @@
 			<button type="button" class="btn btn-danger btnplus" id="moreTv">More</button>
 		</div>
 		<!-- More tv shows when clicking button -->
-		<div class="row collapse" id="collapseMoreTv">
+		<div class="row collapse rowTv scifi" id="collapseMoreTv">
 			<div class="col"></div>
 			<div class="col">
 				<div class="card-deck">
@@ -506,7 +506,7 @@
 			<div class="col"></div>
 		</div>
 		<!-- Shop Movies -->
-		<div class="title"><h1>Shop Movies</h1></div>
+		<div class="title"><h2>Shop Movies</h2></div>
 		<div class="row mainrow">
 			<div class="col-7">
 				<div class="row">
@@ -580,7 +580,7 @@
  					 	<iframe width="560" height="315" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
   					<div class="card-body">
-    					<h2 class="card-title">Storks</h2>
+    					<p class="card-title">Storks</p>
     					<p class="card-text">Story line:</p>
     					<p class="card-text">Release on:</p>
     					<p class="card-text">Genres:</p>
@@ -590,7 +590,7 @@
 			</div>
 		</div>
 		<!-- Contact -->
-		<h1>Contact us</h1>
+		<div class="title"><h2>Contact us</h2></div>
 		<div class="full-form">
 			<form>
 			  <div class="row">

@@ -9,7 +9,6 @@ html {
 
 html, body {
   display: block;
-  height: 100%;
   width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
@@ -21,10 +20,11 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
 }
 
 /*Header*/
+
 .my-nav {
-	position: fixed;
+	position: absolute;
 	width: 100%;
-  z-index: 999;
+  z-index: 999; 
 }
 
 .main-brand {
@@ -62,10 +62,6 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
     right: 29px;
 }
 
-.my-carousel {
-	position: absolute;
-	top: 0;
-}
 
 .banner {
    opacity:0.8;
@@ -93,6 +89,12 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
 
 .big-title h1 strong{
   color: #FB4446;
+}
+
+.title {
+  border-left: 5px solid #FB4446;
+  margin-left: 40px;
+  padding-left: 10px;
 }
 
 /*Main-movies & Tv Shows*/
@@ -142,6 +144,7 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
   margin-left: 90px;
   margin-right: 90px;
 }
+
 
 /*Social Media*/
 .fl-fl {
@@ -206,6 +209,7 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
 }
 
 /*Form*/
+
 .full-form {
   margin-left: 150px;
   margin-right: 150px;
@@ -258,9 +262,3 @@ footer {
 
 /* cookieWarning */
 
-
-
-
-
-
-/* btnTOP */
