@@ -131,8 +131,8 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
   text-align: center;
 }
 
-#demo , #demo2 {
-  margin-left: 100px;
+#collapseMore, #collapseMoreTv {
+  margin-left: 90px;
 }
 
 /*Social Media*/

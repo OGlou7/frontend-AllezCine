@@ -1,9 +1,8 @@
-
-//age verification
+// age verification
 // var agePrompt = prompt("What is your age?");
-//
+
 // function yourAge(){
-//
+
 // if (agePrompt>=18){ alert('Welcome!');
 // } else {
 // alert('Sorry! Come back in a few years!');
@@ -15,10 +14,20 @@
 // }
 // console.log(agePrompt);
 
+// more movies
+$ (document).ready(function(){
+	$('.btnplus').click(function(){
+		$('#collapseMore').toggle();
+		
+	});
+});
 
-$(document).ready(function(){
-   alert('test');
+// more tv shows
+$ (document).ready(function(){
+	$('.btnplus').click(function(){
+		$('#collapseMoreTv').toggle();
+		
+	});
 });
 
 
- // btnTOP
