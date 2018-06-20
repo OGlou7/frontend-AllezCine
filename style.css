@@ -16,6 +16,10 @@ html, body {
   background-color: white;
   background-size: auto; }
 
+h1, h2, h3, p, .form-control, .btn, .my-nav {
+  text-transform: uppercase;
+}
+
 /*Header*/
 .my-nav {
 	position: absolute;
@@ -23,11 +27,46 @@ html, body {
   z-index: 999;
 }
 
+.main-brand { 
+  color: #FB4446;
+  font-size: 500px;
+}
+
+.my-nav a {color: #FB4446;}
+.my-nav a:hover {
+  color:white;
+  background-color:#FB4446; 
+}
+
+.my-nav .navbar-brand {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.navbar-brand strong {color: white;}
+
+.form-inline .form-search {
+  width: 250px !important;
+  height: 28px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  font-size: 10px;
+ }
+ .form-inline .form-search:focus {
+    background: rgba(0, 0, 0, 0.5);
+    border:none;
+}
+
+.form-inline .fa-search {
+  position: absolute;
+    right: 29px;
+}
+
+
 .my-carousel {
 	position: absolute;
 	top: 0;
 }
-
 
 .banner {
    opacity:0.8;
@@ -88,7 +127,7 @@ html, body {
 /*Social Media*/
 .fl-fl {
   position: fixed;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 25px 25px 0;
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 4px;
@@ -102,7 +141,7 @@ html, body {
   -o-transition: all .25s ease;
   transition: all .25s ease;
 }
-.fa {
+.fab {
   font-size: 20px;
   color: #fff;
   padding: 10px 0;
@@ -120,25 +159,82 @@ html, body {
   vertical-align: top!important;
 }
 .float-fb {
-  top: 160px;
+  top: 215px;
   background-color: #3f5e94;
 }
 .float-tw {
-  top: 215px;
+  top: 160px;
   background-color:#16abf8;
 }
 .float-gp {
-  top: 270px;
+  top: 325px;
   background-color:#da4b34;
 }
 .float-ig {
-  top: 325px;
-  background: #eb5247;
+  top: 270px;
+  background: #ff346d;
 }
 
 
+/*Shop movies*/
+.mainrow {
+  margin-left: 35px !important;
+  margin-right: 10px !important;
+}
+
+.card-shopmovies {
+  border: none;
+}
+
+/*Form*/
+.full-form {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: -75px;
+}
+
+.form-control {
+  margin: 5px;
+}
+
+.form-message {
+  height: 100px;
+}
 
 
+/*Footer*/
+footer {
+  background-color: black;
+}
+
+.subscribe {
+  padding-top: 60px;
+  text-align: center;
+  color: #FB4446;
+}
+
+.form-subscribe {
+  width: 400px;
+  height: 35px;
+}
+
+.col-dates {
+  margin-left: 20px;
+}
+.col-img {
+  align-items: flex-start;
+}
+
+.connect {
+  text-align: center;
+  color: white;
+}
+
+.connect-socialmedia {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
 
 
 /* cookieWarning */

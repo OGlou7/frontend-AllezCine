@@ -20,15 +20,16 @@
 	<header>
 		<div class="my-nav nav-container">
 			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand" href="#">Allezcine!</a>
+				<a class="navbar-brand main-brand" href="#">Allez<strong>cine!</strong></a>
 				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon"></span>
 				  </button>
-
 				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 				  	<ul class="navbar-nav mr-auto">
 				      <li class="nav-item active">
-				        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				        <a class="nav-link" href="#">Home
+				        	<span class="sr-only">(current)</span>
+				        </a>
 				      </li>
 				      <li class="nav-item dropdown">
 				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genre
@@ -41,12 +42,21 @@
 						   </div>
 				      </li>
 				      <li class="nav-item">
+				        <a class="nav-link disabled" href="#">Featured Movies</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link disabled" href="#">Featured Tv Shows</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link disabled" href="#">Shop Movies</a>
+				      </li>
+				      <li class="nav-item">
 				        <a class="nav-link disabled" href="#">Contact</a>
 				      </li>
 				    </ul>
 				    <form class="form-inline my-2 my-lg-0">
-				      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				      <input class="form-control mr-sm-2 form-search" type="search" placeholder="Search" aria-label="Search">
+				      <i class="fas fa-search"></i>
 				    </form>
 				  </div>
 			</nav>
@@ -89,25 +99,23 @@
 
 	<!--Social Media -->
 	<div class="float-sm">
-  <div class="fl-fl float-fb">
-    <i class="fa fa-circle"></i>
-    <a href="" target="_blank">Facebook</a>
-  </div>
-  <div class="fl-fl float-tw">
-    <i class="fa fa-twitter"></i>
-    <a href="" target="_blank">Tweeter</T></a>
-  </div>
-  <div class="fl-fl float-gp">
-    <i class="fa fa-google-plus"></i>
-    <a href="" target="_blank">Google Plus</a>
-  </div>
-  <div class="fl-fl float-ig">
-    <i class="fa fa-instagram"></i>
-    <a href="" target="_blank">Instagram</a>
-  </div>
-</div>
-
-
+		<div class="fl-fl float-tw">
+		    <a href="" target="_blank">Twitter</a>
+		    <i class="fab fa-twitter"></i>
+		</div>
+  		<div class="fl-fl float-fb">
+		    <a href="" target="_blank">Facebook</a>
+		    <i class="fab fa-facebook"></i>
+  		</div>
+		<div class="fl-fl float-ig">
+		    <a href="" target="_blank">Dribble</a>
+		    <i class="fab fa-dribbble"></i>
+	  	</div>
+	  	<div class="fl-fl float-gp">
+		    <a href="" target="_blank">Google Plus</a>
+		    <i class="fab fa-google-plus"></i>
+	  	</div>
+	</div>
 
 	<!-- Main movies -->
 	<div class="main-movies">
@@ -493,11 +501,191 @@
 			</div>
 			<div class="col-1"></div>
 		</div>
-		<!-- Third row of Tv Shows -->
-		<div class="row">
-			<div class="col-"></div>
-
+		<!-- Shop Movies -->
+		<div class="title"><h1>Shop Movies</h1></div>
+		<div class="row mainrow">
+			<div class="col-7">
+				<div class="row">
+					<div class="card-deck card-shopmovies">
+						<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+							<div class="card-body">
+	  							<h5 class="card-title">Inception</h5>
+	  							<p class="card-text card-left">2016</p>
+	  							<p class="card-text card-right">Scifi</p>
+	  						</div>
+						</div>
+						<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+							<div class="card-body">
+	  							<h5 class="card-title">Intouchables</h5>
+	  							<p class="card-text card-left">2011</p>
+	  							<p class="card-text card-right">Comedy</p>
+	  						</div>
+						</div>
+						<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+							<div class="card-body">
+	  							<h5 class="card-title">The English Patient</h5>
+	  							<p class="card-text card-left">1996</p>
+	  							<p class="card-text card-right">Drama</p>
+	  						</div>
+						</div>
+						<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+							<div class="card-body">
+	  							<h5 class="card-title">Lord of the Ring</h5>
+	  							<p class="card-text card-left">2002</p>
+	  							<p class="card-text card-right">Adventure</p>
+	  						</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card-deck card-shopmovies">
+						<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+							<div class="card-body">
+	  							<h5 class="card-title">Inception</h5>
+	  							<p class="card-text card-left">2016</p>
+	  							<p class="card-text card-right">Scifi</p>
+	  						</div>
+						</div>
+						<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+							<div class="card-body">
+	  							<h5 class="card-title">Intouchables</h5>
+	  							<p class="card-text card-left">2011</p>
+	  							<p class="card-text card-right">Comedy</p>
+	  						</div>
+						</div>
+						<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+							<div class="card-body">
+	  							<h5 class="card-title">The English Patient</h5>
+	  							<p class="card-text card-left">1996</p>
+	  							<p class="card-text card-right">Drama</p>
+	  						</div>
+						</div>
+						<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+							<div class="card-body">
+	  							<h5 class="card-title">Lord of the Ring</h5>
+	  							<p class="card-text card-left">2002</p>
+	  							<p class="card-text card-right">Adventure</p>
+	  						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-5">
+				<div class="card bg-dark mb-3">
+  					<div class="embed-responsive embed-responsive-16by9">
+ 					 	<iframe width="560" height="315" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+  					<div class="card-body">
+    					<h2 class="card-title">Storks</h2>
+    					<p class="card-text">Story line:</p>
+    					<p class="card-text">Release on:</p>
+    					<p class="card-text">Genres:</p>
+    					<p class="card-text">Price:</p>
+  					</div>
+				</div>				
+			</div>
 		</div>
+		<!-- Contact -->
+		<h1>Contact us</h1>
+		<div class="full-form">
+			<form>	
+			  <div class="row">
+			    <div class="col">
+			      <input type="text" class="form-control" placeholder="First name">
+			    </div>
+			    <div class="col">
+			      <input type="text" class="form-control" placeholder="Last name">
+			    </div>
+			  </div>
+			  <div class="row">
+			    <div class="col">
+			      <input type="text" class="form-control" placeholder="Email">
+			    </div>
+			    <div class="col">
+			      <input type="text" class="form-control" placeholder="Subject">
+			    </div>
+			  </div>
+			  <div class="row">
+			    <div class="col">
+			      <input type="text" class="form-control form-message" placeholder="Your message">
+			    </div>
+			  </div>
+			  <button type="submit" class="btn btn-danger">Send message</button>
+			</form>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="subscribe">
+				<p>Subscribe to us</p>
+				<div>
+					<input type="text" class="form-subscribe" placeholder="Enter your email...">
+					<button type="submit" class="btn btn-danger mb-2">Subscribe</button>
+				</div>
+			</div>
+			<!-- 5 columns -->
+			<div class="row">
+				<div class="col col-dates">
+					<h3>Release</h3><br>
+					<p>2016</p>
+					<p>2015</p>
+					<p>2014</p>
+					<p>2013</p>
+					<p>2012</p>
+					<p>2011</p>
+				</div>
+				<div class="col">
+					<h3>Movies</h3><br>
+					<p>Adventure</p>
+					<p>Comedy</p>
+					<p>Drama</p>
+					<p>Action</p>
+					<p>SciFi</p>
+					<p>Horror</p>
+				</div>	
+				<div class="col">
+					<h3>Review Movies</h3><br>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Comedy</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Horror</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Historical</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Romantic</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Love</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Action</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Reviews</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Action</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">SciFi</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Fantasy</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Drama</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Adventure</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Cartoon</a>
+					<a class="btn btn-dark btn-sm" href="#" role="button">Fantastic</a>
+				</div>	
+				<div class="col">
+					<h3>Latest Movies</h3>
+				</div>	
+				<div class="col col-img">
+					<h3>Allezciné!</h3><br>
+					<img src="img/swissarmyman-2016-comedie.jpg" alt="SwissArmyMan" height="90px">
+					<img src="img/WhatWeDoInTheShadows-2014-comedie.jpg" alt="WhatWeDoInTheShadows" height="90px">
+					<img src="img/zoolander-2001-comedie.jpg" alt="Zoolander" height="90px">
+					<img src="img/hostel-2005-thriller.jpg" alt="Hostel" height="90px">
+					<img src="img/Survivestyle5-2004-comedie.jpg" alt="Survive Style" height="90px">
+					<img src="img/starwarsempire-1980-scifi.jpg" alt="Star Wars" height="90px">
+				</div>
+			</div>
+			<!-- Social media -->
+			<div class="connect">
+				<p>Connect with us</p>
+				<div class="connect-socialmedia">
+					<a href="" class="border border-white fab fa-twitter" target="_blank"></a>
+					<a href="" class="border border-white fab fa-facebook" target="_blank"></a>
+					<a href="" class="border border-white fab fa-dribbble" target="_blank"></a>
+					<a href="" class="border border-white fab fa-youtube-square" target="_blank"></a>
+					<a href="" class="border border-white fab fa-google-plus" target="_blank"></a>
+				</div>
+			</div>		
+		</footer>
+
 		<!-- Cookies alert -->
 
 
