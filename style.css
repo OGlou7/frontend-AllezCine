@@ -27,7 +27,7 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
   z-index: 999;
 }
 
-.main-brand { 
+.main-brand {
   color: #FB4446;
   font-size: 500px;
 }
@@ -35,7 +35,7 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
 .my-nav a {color: #FB4446;}
 .my-nav a:hover {
   color:white;
-  background-color:#FB4446; 
+  background-color:#FB4446;
 }
 
 .my-nav .navbar-brand {
@@ -62,7 +62,6 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
     right: 29px;
 }
 
-
 .my-carousel {
 	position: absolute;
 	top: 0;
@@ -82,6 +81,18 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
 .subscription p {
 	display: inline-block;
 	padding-right: 20px;
+}
+
+.big-title{
+  position: absolute;
+  z-index: 20;
+  top: 300px;
+  left:30% ;
+  color: white;
+}
+
+.big-title h1 strong{
+  color: #FB4446;
 }
 
 /*Main-movies*/
