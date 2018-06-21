@@ -24,7 +24,7 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
 .my-nav {
 	position: absolute;
 	width: 100%;
-  z-index: 999; 
+  z-index: 999;
 }
 
 .main-brand {
@@ -261,4 +261,3 @@ footer {
 
 
 /* cookieWarning */
-

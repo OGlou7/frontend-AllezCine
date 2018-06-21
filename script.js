@@ -14,11 +14,13 @@
 // }
 // console.log(agePrompt);
 
+
+
 // more movies
 $ (document).ready(function(){
 	$('.btnplus').click(function(){
 		$('#collapseMore').toggle();
-		
+
 	});
 });
 
@@ -26,17 +28,15 @@ $ (document).ready(function(){
 $ (document).ready(function(){
 	$('.btnplus').click(function(){
 		$('#collapseMoreTv').toggle();
-		
+
 	});
 });
 
 //buttons more
 $(".btnplus").click(function() {
     if ($(this).text() == "Less") {
-        $(this).text("More"); 
+        $(this).text("More");
     } else {
-        $(this).text("Less"); 
-    }; 
+        $(this).text("Less");
+    };
 });
-
-
