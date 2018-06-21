@@ -40,3 +40,18 @@ $(".btnplus").click(function() {
         $(this).text("Less");
     };
 });
+
+//Bottom-up Arrow in pure Js
+var button = document.createElement("button");
+var lien = document.createElement("a");
+var text = document.createElement("i");
+text.setAttribute("class", "far fa-arrow-alt-circle-up");
+text.setAttribute("style", "font-size: 40px");
+lien.appendChild(text);
+button.setAttribute("class", "btn float-right fixed-bottom");
+button.setAttribute("style", "background-color: transparent;");
+button.appendChild(lien);
+lien.setAttribute("href", "#top")
+
+var endFooter = document.getElementById("footer");
+endFooter.insertAdjacentElement("beforeend", button);

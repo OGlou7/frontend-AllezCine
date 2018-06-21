@@ -208,8 +208,12 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
   border: none;
 }
 
-/*Form*/
+.small-arrows {
+  position: absolute;
+  left: 350px;
+}
 
+/*Form*/
 .full-form {
   margin-left: 150px;
   margin-right: 150px;
@@ -228,6 +232,17 @@ h1, h2, h3, p, .form-control, .btn, .my-nav {
 /*Footer*/
 footer {
   background-color: black;
+}
+
+footer a {color: white;}
+footer a:hover {color: white;}
+
+.far {
+  border-radius: 50%;
+  border: 3px solid #FB4446;
+  position: absolute;
+  bottom: 20px;
+  left: 1200px;
 }
 
 .subscribe {

@@ -17,41 +17,40 @@
 	</head>
 
 <body>
-	<header>
+	<header id="top">
 		<section class="my-nav">
 			<nav class="navbar navbar-expand-lg sticky-top">
-				<a class="navbar-brand main-brand" href="#">Allez<strong>cine!</strong></a>
+				<a class="navbar-brand main-brand" href="#allezcarousel">Allez<strong>cine!</strong></a>
 				  <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				  <span class="navbar-toggler-icon fa fa-bars fa-1x"></span>
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 				  	<ul class="navbar-nav mr-auto">
 				      <li class="nav-item active">
-				        <a class="nav-link" href="#">Home
+				        <a class="nav-link" href="#homepage">Home
 				        	<span class="sr-only">(current)</span>
 				        </a>
 				      </li>
 				      <li class="nav-item dropdown">
-				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genre
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres
 				        </a>
 						   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					          <a class="dropdown-item" href="#">Action</a>
 					          <a class="dropdown-item" href="#">Comedy</a>
 					          <a class="dropdown-item" href="#">Sci-fi</a>
-					          <a class="dropdown-item" href="#">Fiction</a>
 						   </div>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link disabled" href="#">Featured Movies</a>
+				        <a class="nav-link" href="#featured-movies">Featured Movies</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link disabled" href="#">Featured Tv Shows</a>
+				        <a class="nav-link" href="#featured-Tvshows">Featured Tv Shows</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link disabled" href="#">Shop Movies</a>
+				        <a class="nav-link" href="#shop-movies">Shop Movies</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link disabled" href="#">Contact</a>
+				        <a class="nav-link" href="#contact">Contact</a>
 				      </li>
 				    </ul>
 				    <form class="form-inline my-2 my-lg-0">
@@ -94,87 +93,85 @@
 	</header>
 
 	<!-- Subscription line -->
-	<div class="subscription">
+	<div class="subscription" id="homepage">
 		<p><i class="fas fa-phone">(+000)009 455 40 88</i></p>
 		<button type="button" class="btn btn-dark btn-login" data-toggle="modal" data-target="#exampleModalCenter">Login
 		</button>
 		<button type="button" class="btn btn-dark btn-register" data-toggle="modal" data-target="#buttonRegister">Register</button>
-
-
-	<!-- btnLOGIN -->
-	<!-- Modal -->
-	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-	  <div class="modal-dialog modal-dialog-centered" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-					<div class="form-group">
-				    <label for="uname" class="col-form-label"><b>Username</b></label>
-				    <input type="text" placeholder="Enter Username" name="uname" required>
-					</div>
-					<div class="form-group">
+		<!-- btnLOGIN -->
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		         <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+				<div class="form-group">
+					<label for="uname" class="col-form-label"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname" required>
+				</div>
+				<div class="form-group">
 				    <label for="psw" class="col-form-label"><b>Password</b></label>
 				    <input type="password" placeholder="Enter Password" name="psw" required>
-					</div>
-				    <button type="submit" class="btn btn-danger">Login</button>
-						<button type="submit" class="btn btn-danger">Create an account</button>
-	      </div>
-	      <div class="modal-footer">
-					<label>
-						<input type="checkbox" checked="checked" name="remember"> Remember me
-					</label>
+				</div>
+			    <button type="submit" class="btn btn-danger">Login</button>
+				<button type="submit" class="btn btn-danger">Create an account</button>
+		      </div>
+		      <div class="modal-footer">
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
 				<div class="container">
 					<span class="psw">Forgot <a href="#">password?</a></span>
 				</div>
-	        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<div class="modal fade" id="buttonRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-	  <div class="modal-dialog modal-dialog-centered" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalCenterTitle">Register</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-					<div class="form-group">
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="buttonRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalCenterTitle">Register</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+				<div class="form-group">
 				    <label for="uname" class="col-form-label"><b>Name</b></label>
 				    <input type="text" placeholder="Enter Username" name="uname" required>
-					</div>
-					<div class="form-group">
+				</div>
+				<div class="form-group">
 				    <label for="email" class="col-form-label"><b>Email</b></label>
 				    <input type="text" placeholder="Enter email address" name="email" required>
-					</div>
-					<div class="form-group">
+				</div>
+				<div class="form-group">
 				    <label for="psw" class="col-form-label"><b>Password</b></label>
 				    <input type="password" placeholder="Enter Password" name="psw" required>
-					</div>
-					<div class="form-group">
+				</div>
+				<div class="form-group">
 				    <label for="cpsw" class="col-form-label"><b>Confirm Password</b></label>
 				    <input type="password" placeholder="Enter Password" name="cpsw" required>
-					</div>
-				    <button type="submit" class="btn btn-danger">Login</button>
-						<button type="submit" class="btn btn-danger">Create an account</button>
-	      </div>
-	      <div class="modal-footer">
-					<label>
-						<input type="checkbox" checked="checked" name="condition"> General Conditions of Use
-					</label>
-	        <button type="button" class="btn btn-danger" data-dismiss="modal">Register</button>
-	      </div>
-	    </div>
-	  </div>
+				</div>
+			    <button type="submit" class="btn btn-danger">Login</button>
+				<button type="submit" class="btn btn-danger">Create an account</button>
+		      </div>
+		      <div class="modal-footer">
+				<label>
+					<input type="checkbox" checked="checked" name="condition"> General Conditions of Use
+				</label>
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Register</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 	</div>
-</div>
 
 	<!--Social Media -->
 	<div class="float-sm">
@@ -243,7 +240,7 @@
 		</div>
 	</div>
 	<!-- Featured movies -->
-	<div class="featured-movies">
+	<div class="featured-movies" id="featured-movies">
 		<div class="title"><h2>Featured Movies</h2></div>
 		<div class="row">
 			<div class="btn-group" role="group" aria-label="Basic example">
@@ -412,7 +409,7 @@
 		</div>
 
 	<!-- Featured TvShows -->
-	<div class="featured-Tvshows">
+	<div class="featured-Tvshows" id="featured-Tvshows">
 		<div class="title"><h2>Featured TV Shows</h2></div>
 		<!-- Buttons with style -->
 		<div class="row">
@@ -581,7 +578,7 @@
 			<div class="col"></div>
 		</div>
 		<!-- Shop Movies -->
-		<div class="title"><h2>Shop Movies</h2></div>
+		<div class="title" id="shop-movies"><h2>Shop Movies</h2></div>
 		<div class="row mainrow">
 			<div class="col-7">
 				<div class="row">
@@ -649,10 +646,41 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-5">
-				<div class="card bg-dark mb-3">
+			<div class="col" id="trailer-box">
+				<div class="btn-group small-arrows" role="group" aria-label="Small Arrows">
+				  <button type="button" class="btn btn-dark btn-sm" id="previous"><</button>
+				  <button type="button" class="btn btn-dark btn-sm" id="next">></button>
+				</div>
+				<!-- First trailer -->
+				<div class="card bg-dark mb-3 trailer-container" id="trailer1">
   					<div class="embed-responsive embed-responsive-16by9">
- 					 	<iframe width="560" height="315" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+ 					 	<iframe width="560" height="300" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+  					<div class="card-body">
+    					<p class="card-title">Storks</p>
+    					<p class="card-text">Story line:</p>
+    					<p class="card-text">Release on:</p>
+    					<p class="card-text">Genres:</p>
+    					<p class="card-text">Price:</p>
+  					</div>
+				</div>
+				<!-- Second trailer -->
+				<div class="card bg-dark mb-3 trailer-container" id="trailer2">
+  					<div class="embed-responsive embed-responsive-16by9">
+ 					 	<iframe width="560" height="300" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+  					<div class="card-body">
+    					<p class="card-title">Storks</p>
+    					<p class="card-text">Story line:</p>
+    					<p class="card-text">Release on:</p>
+    					<p class="card-text">Genres:</p>
+    					<p class="card-text">Price:</p>
+  					</div>
+				</div>
+				<!-- Third trailer -->
+				<div class="card bg-dark mb-3 trailer-container" id="trailer3">
+  					<div class="embed-responsive embed-responsive-16by9">
+ 					 	<iframe width="560" height="300" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
   					<div class="card-body">
     					<p class="card-title">Storks</p>
@@ -665,7 +693,7 @@
 			</div>
 		</div>
 		<!-- Contact -->
-		<div class="title"><h2>Contact us</h2></div>
+		<div class="title" id="contact"><h2>Contact us</h2></div>
 		<div class="full-form">
 			<form>
 			  <div class="row">
@@ -694,7 +722,7 @@
 		</div>
 
 		<!-- Footer -->
-		<footer>
+		<footer id="footer">
 			<div class="subscribe">
 				<p>Subscribe to us</p>
 				<div>
