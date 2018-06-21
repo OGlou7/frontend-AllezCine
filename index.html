@@ -96,10 +96,85 @@
 	<!-- Subscription line -->
 	<div class="subscription">
 		<p><i class="fas fa-phone">(+000)009 455 40 88</i></p>
-		<button type="button" class="btn btn-dark btn-login">Login</button>
-		<button type="button" class="btn btn-dark btn-register">Register</button>
-	</div>
+		<button type="button" class="btn btn-dark btn-login" data-toggle="modal" data-target="#exampleModalCenter">Login
+		</button>
+		<button type="button" class="btn btn-dark btn-register" data-toggle="modal" data-target="#buttonRegister">Register</button>
 
+
+	<!-- btnLOGIN -->
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+					<div class="form-group">
+				    <label for="uname" class="col-form-label"><b>Username</b></label>
+				    <input type="text" placeholder="Enter Username" name="uname" required>
+					</div>
+					<div class="form-group">
+				    <label for="psw" class="col-form-label"><b>Password</b></label>
+				    <input type="password" placeholder="Enter Password" name="psw" required>
+					</div>
+				    <button type="submit" class="btn btn-danger">Login</button>
+						<button type="submit" class="btn btn-danger">Create an account</button>
+	      </div>
+	      <div class="modal-footer">
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+				<div class="container">
+					<span class="psw">Forgot <a href="#">password?</a></span>
+				</div>
+	        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="modal fade" id="buttonRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalCenterTitle">Register</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+					<div class="form-group">
+				    <label for="uname" class="col-form-label"><b>Name</b></label>
+				    <input type="text" placeholder="Enter Username" name="uname" required>
+					</div>
+					<div class="form-group">
+				    <label for="email" class="col-form-label"><b>Email</b></label>
+				    <input type="text" placeholder="Enter email address" name="email" required>
+					</div>
+					<div class="form-group">
+				    <label for="psw" class="col-form-label"><b>Password</b></label>
+				    <input type="password" placeholder="Enter Password" name="psw" required>
+					</div>
+					<div class="form-group">
+				    <label for="cpsw" class="col-form-label"><b>Confirm Password</b></label>
+				    <input type="password" placeholder="Enter Password" name="cpsw" required>
+					</div>
+				    <button type="submit" class="btn btn-danger">Login</button>
+						<button type="submit" class="btn btn-danger">Create an account</button>
+	      </div>
+	      <div class="modal-footer">
+					<label>
+						<input type="checkbox" checked="checked" name="condition"> General Conditions of Use
+					</label>
+	        <button type="button" class="btn btn-danger" data-dismiss="modal">Register</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
 
 	<!--Social Media -->
 	<div class="float-sm">
@@ -172,10 +247,10 @@
 		<div class="title"><h2>Featured Movies</h2></div>
 		<div class="row">
 			<div class="btn-group" role="group" aria-label="Basic example">
-			  <button type="button" class="btn btn-danger">All</button>
-			  <button type="button" class="btn btn-danger">Action</button>
-			  <button type="button" class="btn btn-danger">Comedy</button>
-			  <button type="button" class="btn btn-danger">SciFi</button>
+			  <button type="button" class="btn btn-danger" id="all">All</button>
+			  <button type="button" class="btn btn-danger" id="action">Action</button>
+			  <button type="button" class="btn btn-danger" id="comedy">Comedy</button>
+			  <button type="button" class="btn btn-danger" id="scifi">SciFi</button>
 			</div>
 		</div>
 		<!-- First selection -->
@@ -183,7 +258,7 @@
 			<div class="col-1"></div>
 			<div class="col-10">
 				<div class="card-deck">
-					<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+					<div class="card border-0 "><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
 						<div class="card-body">
 							<h5 class="card-title">Inception</h5>
 							<p class="card-text card-left">2016</p>
@@ -197,14 +272,14 @@
   							<p class="card-text card-right">Comedy</p>
   						</div>
 					</div>
-					<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+					<div class="card border-0 "><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
 						<div class="card-body">
   							<h5 class="card-title">The English Patient</h5>
   							<p class="card-text card-left">1996</p>
   							<p class="card-text card-right">Drama</p>
   						</div>
 					</div>
-					<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+					<div class="card border-0 "><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
 						<div class="card-body">
   							<h5 class="card-title">Lord of the Ring</h5>
   							<p class="card-text card-left">2002</p>
@@ -234,7 +309,7 @@
 			<div class="col-1"></div>
 			<div class="col-10">
 				<div class="card-deck">
-					<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+					<div class="card border-0 "><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
 						<div class="card-body">
   							<h5 class="card-title">Inception</h5>
   							<p class="card-text card-left">2016</p>
@@ -248,21 +323,21 @@
   							<p class="card-text card-right">Comedy</p>
   						</div>
 					</div>
-					<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+					<div class="card border-0 "><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
 						<div class="card-body">
   							<h5 class="card-title">The English Patient</h5>
   							<p class="card-text card-left">1996</p>
   							<p class="card-text card-right">Drama</p>
   						</div>
 					</div>
-					<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+					<div class="card border-0 "><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
 						<div class="card-body">
   							<h5 class="card-title">Lord of the Ring</h5>
   							<p class="card-text card-left">2002</p>
   							<p class="card-text card-right">Adventure</p>
   						</div>
 					</div>
-					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
+					<div class="card border-0 "><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
 						<div class="card-body">
   							<h5 class="card-title">Shutter Island</h5>
   							<p class="card-text card-left">2010</p>
@@ -693,7 +768,6 @@
 		<!-- Cookies alert -->
 
 
-		<!--btnTOP-->
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
