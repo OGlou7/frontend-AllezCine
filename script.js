@@ -15,7 +15,6 @@
 // console.log(agePrompt);
 
 
-
 // more movies
 $ (document).ready(function(){
 	$('.btnplus').click(function(){
@@ -55,3 +54,23 @@ lien.setAttribute("href", "#top")
 
 var endFooter = document.getElementById("footer");
 endFooter.insertAdjacentElement("beforeend", button);
+
+//pop up form
+function myfunction() {
+         var test1 = 'First Name: ' + document.getElementById("firstname").value;
+         var test2 = 'Last Name: ' + document.getElementById("lastname").value;
+         var test3 = 'Email: ' + document.getElementById("email").value;
+				 var test4 = 'Subject: ' + document.getElementById("subject").value;
+				 var test5 = 'Message: ' + document.getElementById("message").value;
+         alert(test1 + '\n' + test2 + '\n' + test3 + '\n' + test4 + '\n' + test5);
+       }
+
+
+//btn trailer
+
+
+
+//COOKIE Alert
+$('#btnCookie').on("click",function(){
+	$("#cookies").hide();
+});
