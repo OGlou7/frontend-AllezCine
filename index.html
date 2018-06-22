@@ -104,7 +104,7 @@
 		  <div class="modal-dialog modal-dialog-centered" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+		        <h5 class="modal-title" id="exampleModalCenterTitle"><i class="fas fa-user-lock"></i></h5>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		         <span aria-hidden="true">&times;</span>
 		        </button>
@@ -119,16 +119,16 @@
 				    <input type="password" placeholder="Enter Password" name="psw" required>
 				</div>
 			    <button type="submit" class="btn btn-danger">Login</button>
-				<button type="submit" class="btn btn-danger">Create an account</button>
-		      </div>
+					<button type="submit" class="btn btn-danger">Create an account</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember">Remember me
+					</label>
+					</div>
 		      <div class="modal-footer">
-				<label>
-					<input type="checkbox" checked="checked" name="remember"> Remember me
-				</label>
 				<div class="container">
 					<span class="psw">Forgot <a href="#">password?</a></span>
 				</div>
-		        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
 		      </div>
 		    </div>
 		  </div>
@@ -137,7 +137,7 @@
 		  <div class="modal-dialog modal-dialog-centered" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalCenterTitle">Register</h5>
+		        <h5 class="modal-title" id="exampleModalCenterTitle"><i class="fas fa-user-edit"></i></h5>
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		        <span aria-hidden="true">&times;</span>
 		        </button>
@@ -164,7 +164,7 @@
 		      </div>
 		      <div class="modal-footer">
 				<label>
-					<input type="checkbox" checked="checked" name="condition"> General Conditions of Use
+					<input type="checkbox" checked="checked" name="condition" id="condition"> General Conditions of Use
 				</label>
 		        <button type="button" class="btn btn-danger" data-dismiss="modal">Register</button>
 		      </div>
@@ -578,147 +578,160 @@
 			<div class="col"></div>
 		</div>
 		<!-- Shop Movies -->
-		<div class="title" id="shop-movies"><h2>Shop Movies</h2></div>
-		<div class="row mainrow">
-			<div class="col-7">
-				<div class="row">
-					<div class="card-deck card-shopmovies">
-						<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
-							<div class="card-body">
-	  							<h5 class="card-title">Inception</h5>
-	  							<p class="card-text card-left">2016</p>
-	  							<p class="card-text card-right">Scifi</p>
-	  						</div>
+		<div class="shopmovies-container">
+			<div class="title" id="shop-movies"><h2>Shop Movies</h2></div>
+			<div class="row mainrow">
+				<div class="col-7">
+					<div class="row">
+						<div class="card-deck card-shopmovies">
+							<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+								<div class="card-body">
+		  							<h5 class="card-title">Inception</h5>
+		  							<p class="card-text card-left">2016</p>
+		  							<p class="card-text card-right">Scifi</p>
+		  						</div>
+							</div>
+							<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+								<div class="card-body">
+		  							<h5 class="card-title">Intouchables</h5>
+		  							<p class="card-text card-left">2011</p>
+		  							<p class="card-text card-right">Comedy</p>
+		  						</div>
+							</div>
+							<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+								<div class="card-body">
+		  							<h5 class="card-title">The English Patient</h5>
+		  							<p class="card-text card-left">1996</p>
+		  							<p class="card-text card-right">Drama</p>
+		  						</div>
+							</div>
+							<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+								<div class="card-body">
+		  							<h5 class="card-title">Lord of the Ring</h5>
+		  							<p class="card-text card-left">2002</p>
+		  							<p class="card-text card-right">Adventure</p>
+		  						</div>
+							</div>
 						</div>
-						<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
-							<div class="card-body">
-	  							<h5 class="card-title">Intouchables</h5>
-	  							<p class="card-text card-left">2011</p>
-	  							<p class="card-text card-right">Comedy</p>
-	  						</div>
-						</div>
-						<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
-							<div class="card-body">
-	  							<h5 class="card-title">The English Patient</h5>
-	  							<p class="card-text card-left">1996</p>
-	  							<p class="card-text card-right">Drama</p>
-	  						</div>
-						</div>
-						<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
-							<div class="card-body">
-	  							<h5 class="card-title">Lord of the Ring</h5>
-	  							<p class="card-text card-left">2002</p>
-	  							<p class="card-text card-right">Adventure</p>
-	  						</div>
+					</div>
+					<div class="row">
+						<div class="card-deck card-shopmovies">
+							<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+								<div class="card-body">
+		  							<h5 class="card-title">Inception</h5>
+		  							<p class="card-text card-left">2016</p>
+		  							<p class="card-text card-right">Scifi</p>
+		  						</div>
+							</div>
+							<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+								<div class="card-body">
+		  							<h5 class="card-title">Intouchables</h5>
+		  							<p class="card-text card-left">2011</p>
+		  							<p class="card-text card-right">Comedy</p>
+		  						</div>
+							</div>
+							<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+								<div class="card-body">
+		  							<h5 class="card-title">The English Patient</h5>
+		  							<p class="card-text card-left">1996</p>
+		  							<p class="card-text card-right">Drama</p>
+		  						</div>
+							</div>
+							<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+								<div class="card-body">
+		  							<h5 class="card-title">Lord of the Ring</h5>
+		  							<p class="card-text card-left">2002</p>
+		  							<p class="card-text card-right">Adventure</p>
+		  						</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="card-deck card-shopmovies">
-						<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
-							<div class="card-body">
-	  							<h5 class="card-title">Inception</h5>
-	  							<p class="card-text card-left">2016</p>
-	  							<p class="card-text card-right">Scifi</p>
-	  						</div>
+				<div class="col" id="trailer-box">
+					<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+						<div class="btn-group small-arrows" role="group" aria-label="Small Arrows">
+						  <button type="button" href="#multi-item-example" class="btn btn-dark btn-sm" id="previous" data-slide="prev" ><</button>
+						  <button type="button" href="#multi-item-example" class="btn btn-dark btn-sm" id="next" data-slide="next">></button>
 						</div>
-						<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
-							<div class="card-body">
-	  							<h5 class="card-title">Intouchables</h5>
-	  							<p class="card-text card-left">2011</p>
-	  							<p class="card-text card-right">Comedy</p>
-	  						</div>
-						</div>
-						<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
-							<div class="card-body">
-	  							<h5 class="card-title">The English Patient</h5>
-	  							<p class="card-text card-left">1996</p>
-	  							<p class="card-text card-right">Drama</p>
-	  						</div>
-						</div>
-						<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
-							<div class="card-body">
-	  							<h5 class="card-title">Lord of the Ring</h5>
-	  							<p class="card-text card-left">2002</p>
-	  							<p class="card-text card-right">Adventure</p>
-	  						</div>
+					<!-- First trailer -->
+					<div class="carousel-inner" role="listbox">
+		        <div class="carousel-item active">
+							<div class="card bg-dark mb-3 trailer-container" id="trailer1">
+		  					<div class="embed-responsive embed-responsive-16by9">
+		 					 		<iframe width="560" height="300" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								</div>
+		  					<div class="card-body">
+		    					<p class="card-title">Storks</p>
+		    					<p class="card-text">Story line:</p>
+		    					<p class="card-text">Release on:</p>
+		    					<p class="card-text">Genres:</p>
+		    					<p class="card-text">Price:</p>
+		  					</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="col" id="trailer-box">
-				<div class="btn-group small-arrows" role="group" aria-label="Small Arrows">
-				  <button type="button" class="btn btn-dark btn-sm" id="previous"><</button>
-				  <button type="button" class="btn btn-dark btn-sm" id="next">></button>
-				</div>
-				<!-- First trailer -->
-				<div class="card bg-dark mb-3 trailer-container" id="trailer1">
-  					<div class="embed-responsive embed-responsive-16by9">
- 					 	<iframe width="560" height="300" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<!-- Second trailer -->
+	        	<div class="carousel-item">
+							<div class="card bg-dark mb-3 trailer-container" id="trailer2">
+	  						<div class="embed-responsive embed-responsive-16by9">
+	 					 			<iframe width="560" height="300" src="https://youtu.be/vzEcZJSdW-4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								</div>
+		  					<div class="card-body">
+		    					<p class="card-title">Promised Land</p>
+		    					<p class="card-text">Story line:</p>
+		    					<p class="card-text">Release on:</p>
+		    					<p class="card-text">Genres:</p>
+		    					<p class="card-text">Price:</p>
+		  					</div>
+							</div>
+						</div>
+					<!-- Third trailer -->
+	        	<div class="carousel-item">
+							<div class="card bg-dark mb-3 trailer-container" id="trailer3">
+			  				<div class="embed-responsive embed-responsive-16by9">
+			 					 	<iframe width="560" height="300" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								</div>
+			  					<div class="card-body">
+			    					<p class="card-title">Storks</p>
+			    					<p class="card-text">Story line:</p>
+			    					<p class="card-text">Release on:</p>
+			    					<p class="card-text">Genres:</p>
+			    					<p class="card-text">Price:</p>
+			  					</div>
+							</div>
+						</div>
 					</div>
-  					<div class="card-body">
-    					<p class="card-title">Storks</p>
-    					<p class="card-text">Story line:</p>
-    					<p class="card-text">Release on:</p>
-    					<p class="card-text">Genres:</p>
-    					<p class="card-text">Price:</p>
-  					</div>
-				</div>
-				<!-- Second trailer -->
-				<div class="card bg-dark mb-3 trailer-container" id="trailer2">
-  					<div class="embed-responsive embed-responsive-16by9">
- 					 	<iframe width="560" height="300" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</div>
-  					<div class="card-body">
-    					<p class="card-title">Storks</p>
-    					<p class="card-text">Story line:</p>
-    					<p class="card-text">Release on:</p>
-    					<p class="card-text">Genres:</p>
-    					<p class="card-text">Price:</p>
-  					</div>
-				</div>
-				<!-- Third trailer -->
-				<div class="card bg-dark mb-3 trailer-container" id="trailer3">
-  					<div class="embed-responsive embed-responsive-16by9">
- 					 	<iframe width="560" height="300" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</div>
-  					<div class="card-body">
-    					<p class="card-title">Storks</p>
-    					<p class="card-text">Story line:</p>
-    					<p class="card-text">Release on:</p>
-    					<p class="card-text">Genres:</p>
-    					<p class="card-text">Price:</p>
-  					</div>
 				</div>
 			</div>
 		</div>
 		<!-- Contact -->
-		<div class="title" id="contact"><h2>Contact us</h2></div>
-		<div class="full-form">
-			<form>
-			  <div class="row">
-			    <div class="col">
-			      <input type="text" class="form-control" placeholder="First name">
-			    </div>
-			    <div class="col">
-			      <input type="text" class="form-control" placeholder="Last name">
-			    </div>
-			  </div>
-			  <div class="row">
-			    <div class="col">
-			      <input type="text" class="form-control" placeholder="Email">
-			    </div>
-			    <div class="col">
-			      <input type="text" class="form-control" placeholder="Subject">
-			    </div>
-			  </div>
-			  <div class="row">
-			    <div class="col">
-			      <input type="text" class="form-control form-message" placeholder="Your message">
-			    </div>
-			  </div>
-			  <button type="submit" class="btn btn-danger">Send message</button>
-			</form>
+		<div class="contact-container">
+			<div class="title" id="contact"><h2>Contact us</h2></div>
+			<div class="full-form">
+				<form>
+				  <div class="row">
+				    <div class="col">
+				      <input type="text" class="form-control"  id="firstname" placeholder="First name">
+				    </div>
+				    <div class="col">
+				      <input type="text" class="form-control" id="lastname" placeholder="Last name">
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="col">
+				      <input type="text" class="form-control" id="email" placeholder="Email">
+				    </div>
+				    <div class="col">
+				      <input type="text" class="form-control" id="subject"placeholder="Subject">
+				    </div>
+				  </div>
+				  <div class="row">
+				    <div class="col">
+				      <input type="text" class="form-control form-message" id="message"placeholder="Your message">
+				    </div>
+				  </div>
+				  <button type="submit" class="btn btn-danger" id="sendmsg" onclick="myfunction()">Send message</button>
+				</form>
+			</div>
 		</div>
 
 		<!-- Footer -->
@@ -791,10 +804,13 @@
 					<a href="" class="border border-white fab fa-google-plus" target="_blank"></a>
 				</div>
 			</div>
+
+			<!-- COOKIE Alert -->
+			<div id="cookies" class="fixed-bottom text-center">
+				<span>We use cookies to enhance your web browsing experience. By continuing to browse the site you agree to our policy on cookie usage.</span>
+				<button type="button" name="button" id="btnCookie" class="btn btn-danger">Accept</button>
+			</div>
 		</footer>
-
-		<!-- Cookies alert -->
-
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
