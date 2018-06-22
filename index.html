@@ -14,6 +14,8 @@
 
 		<!-- Fontawesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+		<!-- Cookies -->
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
 	</head>
 
 <body>
@@ -67,15 +69,15 @@
 		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 		  </ol>
 		  <div class="carousel-inner">
-				<div class="big-title">
-					<h1>latest <strong>on</strong>line <strong>mo</strong>vies</h1>
-					<button type="button" name="button" class="btn btn-danger">WATCH TRAILER</button>
-				</div>
+			<div class="big-title">
+				<h1>latest <strong>on</strong>line <strong>mo</strong>vies</h1>
+				<button type="button" name="button" class="btn btn-danger">WATCH TRAILER</button>
+			</div>
 		    <div class="carousel-item active">
-		      <img class="banner d-block w-100" src="img/Banner_MeBeforeYou.jpg" alt="MeBeforeYou" height="650px">
+		      <img class="banner d-block w-100" src="img/banner_kin2018.jpg" alt="Kin" height="650px">
 		    </div>
 		    <div class="carousel-item">
-		      <img class="banner d-block w-100" src="img/Banner_BladeRunner.jpg" alt="BladeRunner" height="650px">
+		      <img class="banner d-block w-100" src="img/banner_blackkklansman_2018.jpg" alt="Blackkklansman" height="650px">
 		    </div>
 		    <div class="carousel-item">
 		      <img class="banner d-block w-100" src="img/Banner_Ocean8.png" alt="Ocean8" height="650px">
@@ -199,46 +201,125 @@
 			<div class="col-2"></div>
 			<div class="col-8">
 				<div class="card-deck">
-					<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+					<div class="card border-0" id="movie1"><img src="img/dontget-2018-comedy.jpg" alt="Don't Worry, He Won't Get Far on Foot" height="200px">
 						<div class="card-body">
-  							<h5 class="card-title">Inception</h5>
-  							<p class="card-text card-left">2016</p>
-  							<p class="card-text card-right">Scifi</p>
-  						</div>
-					</div>
-					<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
-						<div class="card-body">
-  							<h5 class="card-title">Intouchables</h5>
-  							<p class="card-text card-left">2011</p>
+  							<h5 class="card-title">Don't Worry, He Won't Get Far on Foot</h5>
+  							<p class="card-text card-left">2018</p>
   							<p class="card-text card-right">Comedy</p>
   						</div>
 					</div>
-					<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+					<div class="card border-0" id="movie2"><img src="img/blacKkKlansmaan-2018-comedy.jpg" alt="Blackkklansman" height="200px">
 						<div class="card-body">
-  							<h5 class="card-title">The English Patient</h5>
-  							<p class="card-text card-left">1996</p>
-  							<p class="card-text card-right">Drama</p>
+  							<h5 class="card-title">BlacKkKlansman</h5>
+  							<p class="card-text card-left">2018</p>
+  							<p class="card-text card-right">Comedy</p>
   						</div>
 					</div>
-					<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+					<div class="card border-0" id="movie3"><img src="img/Kin-2018-scifi.jpg" alt="Kin" height="200px">
 						<div class="card-body">
-  							<h5 class="card-title">Lord of the Ring</h5>
-  							<p class="card-text card-left">2002</p>
-  							<p class="card-text card-right">Adventure</p>
+  							<h5 class="card-title">Kin</h5>
+  							<p class="card-text card-left">2018</p>
+  							<p class="card-text card-right">Scifi</p>
   						</div>
 					</div>
-					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
+					<div class="card border-0" id="movie4"><img src="img/ocean8-2018-action.jpg" alt="Ocean 8" height="200px">
 						<div class="card-body">
-  							<h5 class="card-title">Shutter Island</h5>
-  							<p class="card-text card-left">2010</p>
-  							<p class="card-text card-right">Thriller</p>
+  							<h5 class="card-title">Ocean's Eight</h5>
+  							<p class="card-text card-left">2018</p>
+  							<p class="card-text card-right">Action</p>
+  						</div>
+					</div>
+					<div class="card border-0" id="movie5"><img src="img/solo-2018-scifi.jpg" alt="Solo Star Wars" height="200px">
+						<div class="card-body">
+  							<h5 class="card-title">Solo Star Wars</h5>
+  							<p class="card-text card-left">2018</p>
+  							<p class="card-text card-right">Scifi</p>
   						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-2"></div>
 		</div>
+		
+		<!-- Modal videos -->
+		<div id="myModal" class="modal fade">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/ZYWrgLTNKP4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<p>
+							<i>On the rocky path to sobriety after a life-changing accident, John Callahan discovers the healing power of art, willing his injured hands into drawing hilarious, often controversial cartoons, which bring him a new lease on life</i>.
+						</p>	
+						<p><b>Director</b>: Gus Van Sant</p>
+						<p><b>Actors</b>: Joaquin Phoenix, Jonah Hill, Rooney Mara, Jack Black ...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal2" class="modal fade">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/pFc6I0rgmgY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<p>
+							<i>Ron Stallworth, an African-American police officer from Colorado, successfully managed to infiltrate the local Ku Klux Klan and became the head of the local chapter.</i>.
+						</p>	
+						<p><b>Director</b>: Spike Lee</p>
+						<p><b>Actors</b>: Adam Driver, Alec Baldwin, Topher Grace ...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal3" class="modal fade">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/Ac5wrM2uYbk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<p>
+							<i>Chased by a vengeful criminal, the feds and a gang of otherworldly soldiers, a recently released ex-con and his adopted teenage brother are forced to go on the run with a weapon of mysterious origin as their only protection.</i>.
+						</p>	
+						<p><b>Director</b>: Jonathan & Josh Baker</p>
+						<p><b>Actors</b>: James Franco, Zoé Kravitz, Carrie Coon...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal4" class="modal fade">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/MFWF9dU5Zc0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<p>
+							<i>Debbie Ocean gathers an all-female crew to attempt an impossible heist at New York City's yearly Met Gala.</i>.
+						</p>	
+						<p><b>Director</b>: Gary Ross</p>
+						<p><b>Actors</b>: Sandra Bullock, Cate Blanchett, Anne Hathaway, Rihanna...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal5" class="modal fade">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/Cs4y56AnaUg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<p>
+							<i>Debbie Ocean gathers an all-female crew to attempt an impossible heist at New York City's yearly Met Gala.</i>.
+						</p>	
+						<p><b>Director</b>: Ron Howard</p>
+						<p><b>Actors</b>: Alden Ehrenreich, Woody Harrelson, Emilia Clarke...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
+
 	<!-- Featured movies -->
 	<div class="featured-movies" id="featured-movies">
 		<div class="title"><h2>Featured Movies</h2></div>
@@ -269,32 +350,32 @@
   							<p class="card-text card-right">Comedy</p>
   						</div>
 					</div>
-					<div class="card border-0 "><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+					<div class="card border-0 "><img src="img/okja-2017-action.jpg" alt="Okja" height="200px">
 						<div class="card-body">
-  							<h5 class="card-title">The English Patient</h5>
-  							<p class="card-text card-left">1996</p>
-  							<p class="card-text card-right">Drama</p>
+  							<h5 class="card-title">Okja</h5>
+  							<p class="card-text card-left">2017</p>
+  							<p class="card-text card-right">Action</p>
   						</div>
 					</div>
 					<div class="card border-0 "><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
 						<div class="card-body">
   							<h5 class="card-title">Lord of the Ring</h5>
   							<p class="card-text card-left">2002</p>
-  							<p class="card-text card-right">Adventure</p>
+  							<p class="card-text card-right">Action</p>
+  						</div>
+					</div>
+					<div class="card border-0"><img src="img/tag-2018-comedy.jpg" alt="Tag" height="200px">
+						<div class="card-body">
+  							<h5 class="card-title">Tag</h5>
+  							<p class="card-text card-left">2018</p>
+  							<p class="card-text card-right">Comedy</p>
   						</div>
 					</div>
 					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
 						<div class="card-body">
   							<h5 class="card-title">Shutter Island</h5>
   							<p class="card-text card-left">2010</p>
-  							<p class="card-text card-right">Thriller</p>
-  						</div>
-					</div>
-					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
-						<div class="card-body">
-  							<h5 class="card-title">Shutter Island</h5>
-  							<p class="card-text card-left">2010</p>
-  							<p class="card-text card-right">Thriller</p>
+  							<p class="card-text card-right">Action</p>
   						</div>
 					</div>
 				</div>
@@ -306,46 +387,46 @@
 			<div class="col-1"></div>
 			<div class="col-10">
 				<div class="card-deck">
-					<div class="card border-0 "><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+					<div class="card border-0 "><img src="img/eightgrade-2018-comedy.jpg" alt="EightGrade" height="200px">
 						<div class="card-body">
-  							<h5 class="card-title">Inception</h5>
-  							<p class="card-text card-left">2016</p>
-  							<p class="card-text card-right">Scifi</p>
-  						</div>
-					</div>
-					<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
-						<div class="card-body">
-  							<h5 class="card-title">Intouchables</h5>
-  							<p class="card-text card-left">2011</p>
+  							<h5 class="card-title">Eight Grade</h5>
+  							<p class="card-text card-left">2018</p>
   							<p class="card-text card-right">Comedy</p>
   						</div>
 					</div>
-					<div class="card border-0 "><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+					<div class="card border-0"><img src="img/cloudatlas-2013-action.jpg" alt="CloudAtlas" height="200px">
 						<div class="card-body">
-  							<h5 class="card-title">The English Patient</h5>
-  							<p class="card-text card-left">1996</p>
-  							<p class="card-text card-right">Drama</p>
+  							<h5 class="card-title">Cloud Atlas</h5>
+  							<p class="card-text card-left">2013</p>
+  							<p class="card-text card-right">Action</p>
   						</div>
 					</div>
-					<div class="card border-0 "><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+					<div class="card border-0 "><img src="img/Codesource-2011-scifi.jpg" alt="SourceCode" height="200px">
 						<div class="card-body">
-  							<h5 class="card-title">Lord of the Ring</h5>
-  							<p class="card-text card-left">2002</p>
-  							<p class="card-text card-right">Adventure</p>
+  							<h5 class="card-title">Source</h5>
+  							<p class="card-text card-left">2011</p>
+  							<p class="card-text card-right">SciFi</p>
   						</div>
 					</div>
-					<div class="card border-0 "><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
+					<div class="card border-0 "><img src="img/layercake-2004-action.jpg" alt="Layer Cake" height="200px">
 						<div class="card-body">
-  							<h5 class="card-title">Shutter Island</h5>
-  							<p class="card-text card-left">2010</p>
-  							<p class="card-text card-right">Thriller</p>
+  							<h5 class="card-title">Layer Cake</h5>
+  							<p class="card-text card-left">2004</p>
+  							<p class="card-text card-right">Action</p>
   						</div>
 					</div>
-					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
+					<div class="card border-0 "><img src="img/matrix-1999-scifi.jpg" alt="Matrix" height="200px">
 						<div class="card-body">
-  							<h5 class="card-title">Shutter Island</h5>
-  							<p class="card-text card-left">2010</p>
-  							<p class="card-text card-right">Thriller</p>
+  							<h5 class="card-title">Matrix</h5>
+  							<p class="card-text card-left">1999</p>
+  							<p class="card-text card-right">SciFi</p>
+  						</div>
+					</div>
+					<div class="card border-0"><img src="img/borat-2006-comedy.jpg" alt="Borat" height="200px">
+						<div class="card-body">
+  							<h5 class="card-title">Borat</h5>
+  							<p class="card-text card-left">2006</p>
+  							<p class="card-text card-right">Comedy</p>
   						</div>
 					</div>
 				</div>
@@ -361,46 +442,46 @@
 			<div class="col"></div>
 			<div class="col">
 				<div class="card-deck">
-					<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+					<div class="card border-0"><img src="img/bladerunner-2017-scifi.jpg" alt="Blade Runner" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Inception</h5>
-							<p class="card-text card-left">2016</p>
-							<p class="card-text card-right">Scifi</p>
+							<h5 class="card-title">Blade Runner</h5>
+							<p class="card-text card-left">2017</p>
+							<p class="card-text card-right">SciFi</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+					<div class="card border-0"><img src="img/Lacitédelapeur-1994-comedy.jpg" alt="La Cité de La Peur" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Intouchables</h5>
-							<p class="card-text card-left">2011</p>
+							<h5 class="card-title">La Cité de la Peur</h5>
+							<p class="card-text card-left">1994</p>
 							<p class="card-text card-right">Comedy</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+					<div class="card border-0"><img src="img/rushmore-1998-comedy.jpg" alt="Rushmore" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">The English Patient</h5>
-							<p class="card-text card-left">1996</p>
-							<p class="card-text card-right">Drama</p>
+							<h5 class="card-title">Rushmore</h5>
+							<p class="card-text card-left">1998</p>
+							<p class="card-text card-right">Comedy</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+					<div class="card border-0"><img src="img/Themartian-2016-scifi.jpg" alt="The Martian" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Lord of the Ring</h5>
-							<p class="card-text card-left">2002</p>
-							<p class="card-text card-right">Adventure</p>
+							<h5 class="card-title">The Martian</h5>
+							<p class="card-text card-left">2016</p>
+							<p class="card-text card-right">SciFi</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
+					<div class="card border-0"><img src="img/thelobster-2005-comedy.jpg" alt="The Lobster" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Shutter Island</h5>
-							<p class="card-text card-left">2010</p>
-							<p class="card-text card-right">Thriller</p>
+							<h5 class="card-title">The Lobster</h5>
+							<p class="card-text card-left">2005</p>
+							<p class="card-text card-right">Comedy</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
+					<div class="card border-0"><img src="img/starwarsempire-1980-scifi.jpg" alt="Star Wars" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Shutter Island</h5>
-							<p class="card-text card-left">2010</p>
-							<p class="card-text card-right">Thriller</p>
+							<h5 class="card-title">Star Wars</h5>
+							<p class="card-text card-left">1980</p>
+							<p class="card-text card-right">SciFi</p>
 						</div>
 					</div>
 				</div>
@@ -414,10 +495,10 @@
 		<!-- Buttons with style -->
 		<div class="row">
 			<div class="btn-group" role="group" aria-label="Basic example" id="myBtnContainer">
-				<button onclick="filterSelection('all')" type="button" class="btn btn-danger">All</button>
-				<button onclick="filterSelection('action')" type="button" class="btn btn-danger">Action</button>
-				<button onclick="filterSelection('comedy')" type="button" class="btn btn-danger">Comedy</button>
-				<button onclick="filterSelection('Scifi')" type="button" class="btn btn-danger">SciFi</button>
+				<button type="button" class="btn btn-danger">All</button>
+				<button type="button" class="btn btn-danger">Action</button>
+				<button type="button" class="btn btn-danger">Comedy</button>
+				<button type="button" class="btn btn-danger">SciFi</button>
 			</div>
 		</div>
 		<!-- List of TvShows -->
@@ -425,46 +506,46 @@
 			<div class="col-1"></div>
 			<div class="col-10">
 				<div class="card-deck">
-					<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+					<div class="card border-0"><img src="img/tv-blackmirror-scifi.jpg" alt="Black Mirror" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Inception</h5>
+							<h5 class="card-title">Black Mirror</h5>
 							<p class="card-text card-left">2016</p>
 							<p class="card-text card-right">Scifi</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+					<div class="card border-0"><img src="img/tv-breakingbad-2008-action.jpg" alt="Breaking Bad" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Intouchables</h5>
-							<p class="card-text card-left">2011</p>
+							<h5 class="card-title">Breaking Bad</h5>
+							<p class="card-text card-left">2008</p>
+							<p class="card-text card-right">Action</p>
+						</div>
+					</div>
+					<div class="card border-0"><img src="img/tv-rickmorty-2013-comedy.jpg" alt="Rick & Morty" height="200px">
+						<div class="card-body">
+							<h5 class="card-title">Rick & Morty</h5>
+							<p class="card-text card-left">2013</p>
 							<p class="card-text card-right">Comedy</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+					<div class="card border-0"><img src="img/tv-lacasadepapel-2017-action.jpg" alt="La Casa de Papel" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">The English Patient</h5>
-							<p class="card-text card-left">1996</p>
-							<p class="card-text card-right">Drama</p>
+							<h5 class="card-title">La Casa de Papel</h5>
+							<p class="card-text card-left">2017</p>
+							<p class="card-text card-right">Action</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+					<div class="card border-0"><img src="img/tv-humans-2015-scifi.jpg" alt="Humans" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Lord of the Ring</h5>
-							<p class="card-text card-left">2002</p>
-							<p class="card-text card-right">Adventure</p>
+							<h5 class="card-title">Humans</h5>
+							<p class="card-text card-left">2015</p>
+							<p class="card-text card-right">SciFi</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
+					<div class="card border-0"><img src="img/tv-got-2010-action.jpg" alt="Game of Thrones" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Shutter Island</h5>
+							<h5 class="card-title">Game of Thrones</h5>
 							<p class="card-text card-left">2010</p>
-							<p class="card-text card-right">Thriller</p>
-						</div>
-					</div>
-					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
-						<div class="card-body">
-							<h5 class="card-title">Shutter Island</h5>
-							<p class="card-text card-left">2010</p>
-							<p class="card-text card-right">Thriller</p>
+							<p class="card-text card-right">Action</p>
 						</div>
 					</div>
 				</div>
@@ -476,46 +557,46 @@
 			<div class="col-1"></div>
 			<div class="col-10">
 				<div class="card-deck">
-					<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+					<div class="card border-0"><img src="img/tv-fargo-2010-action.jpg" alt="Fargo" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Inception</h5>
-							<p class="card-text card-left">2016</p>
-							<p class="card-text card-right">Scifi</p>
+							<h5 class="card-title">Fargo</h5>
+							<p class="card-text card-left">2010</p>
+							<p class="card-text card-right">Action</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+					<div class="card border-0"><img src="img/tv-misfits-2009-comedy.jpg" alt="Misfits" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Intouchables</h5>
-							<p class="card-text card-left">2011</p>
+							<h5 class="card-title">Misfits</h5>
+							<p class="card-text card-left">2009</p>
 							<p class="card-text card-right">Comedy</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+					<div class="card border-0"><img src="img/tv-strangerthings-2017-action.jpg" alt="Stranger Things" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">The English Patient</h5>
-							<p class="card-text card-left">1996</p>
-							<p class="card-text card-right">Drama</p>
+							<h5 class="card-title">Stranger Things</h5>
+							<p class="card-text card-left">2017</p>
+							<p class="card-text card-right">Action</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+					<div class="card border-0"><img src="img/tv-sense8-2017-scifi.jpg" alt="Sense8" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Lord of the Ring</h5>
-							<p class="card-text card-left">2002</p>
-							<p class="card-text card-right">Adventure</p>
+							<h5 class="card-title">Sense8</h5>
+							<p class="card-text card-left">2017</p>
+							<p class="card-text card-right">SciFi</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
+					<div class="card border-0"><img src="img/tv-theendofthefuckingworld-2017-comedy.jpg" alt="The End of the Fucking World" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Shutter Island</h5>
-							<p class="card-text card-left">2010</p>
-							<p class="card-text card-right">Thriller</p>
+							<h5 class="card-title">The End of the Fucking World</h5>
+							<p class="card-text card-left">2017</p>
+							<p class="card-text card-right">Comedy</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
+					<div class="card border-0"><img src="img/tv-theitcrowd-2008-comedy.jpg" alt="The IT Crowd" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Shutter Island</h5>
-							<p class="card-text card-left">2010</p>
-							<p class="card-text card-right">Thriller</p>
+							<h5 class="card-title">The IT Crowd</h5>
+							<p class="card-text card-left">2008</p>
+							<p class="card-text card-right">Comedy</p>
 						</div>
 				</div>
 			</div>
@@ -531,46 +612,46 @@
 			<div class="col"></div>
 			<div class="col">
 				<div class="card-deck">
-					<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+					<div class="card border-0"><img src="img/tv-theoa-2016-scifi.jpg" alt="The OA" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Inception</h5>
+							<h5 class="card-title">The OA</h5>
 							<p class="card-text card-left">2016</p>
 							<p class="card-text card-right">Scifi</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+					<div class="card border-0"><img src="img/tv-theoffice-2005-comedy.jpg" alt="The Office" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Intouchables</h5>
-							<p class="card-text card-left">2011</p>
+							<h5 class="card-title">The Office</h5>
+							<p class="card-text card-left">2005</p>
 							<p class="card-text card-right">Comedy</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+					<div class="card border-0"><img src="img/tv-utopia-2014-scifi.jpg" alt="Utopia" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">The English Patient</h5>
-							<p class="card-text card-left">1996</p>
-							<p class="card-text card-right">Drama</p>
+							<h5 class="card-title">Utopia</h5>
+							<p class="card-text card-left">2014</p>
+							<p class="card-text card-right">SciFi</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+					<div class="card border-0"><img src="img/tv-arrow-2014-action.jpg" alt="Arrow" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Lord of the Ring</h5>
-							<p class="card-text card-left">2002</p>
-							<p class="card-text card-right">Adventure</p>
+							<h5 class="card-title">Arrow</h5>
+							<p class="card-text card-left">2014</p>
+							<p class="card-text card-right">Action</p>
 						</div>
 					</div>
-					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
+					<div class="card border-0"><img src="img/tv-westworld-2016-scifi.jpg" alt="Westworld" height="200px">
 						<div class="card-body">
-							<h5 class="card-title">Shutter Island</h5>
+							<h5 class="card-title">Westworld</h5>
+							<p class="card-text card-left">2016</p>
+							<p class="card-text card-right">SciFi</p>
+						</div>
+					</div>
+					<div class="card border-0"><img src="img/tv-sherlock-2010-action.jpg" alt="Sherlock" height="200px">
+						<div class="card-body">
+							<h5 class="card-title">Sherlock</h5>
 							<p class="card-text card-left">2010</p>
-							<p class="card-text card-right">Thriller</p>
-						</div>
-					</div>
-					<div class="card border-0"><img src="img/shutterisland-2010-thriller.jpg" alt="Shutter Island" height="200px">
-						<div class="card-body">
-							<h5 class="card-title">Shutter Island</h5>
-							<p class="card-text card-left">2010</p>
-							<p class="card-text card-right">Thriller</p>
+							<p class="card-text card-right">Action</p>
 						</div>
 					</div>
 				</div>
@@ -584,64 +665,64 @@
 				<div class="col-7">
 					<div class="row">
 						<div class="card-deck card-shopmovies">
-							<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+							<div class="card border-0"><img src="img/her-2013-comedy.jpg" alt="Her" height="200px">
 								<div class="card-body">
-		  							<h5 class="card-title">Inception</h5>
+		  							<h5 class="card-title">Her</h5>
+		  							<p class="card-text card-left">2013</p>
+		  							<p class="card-text card-right">8€</p>
+		  						</div>
+							</div>
+							<div class="card border-0"><img src="img/I,DanielBlake-2016-drama.jpg" alt="I, Daniel Blake" height="200px">
+								<div class="card-body">
+		  							<h5 class="card-title">I, Daniel Blake</h5>
 		  							<p class="card-text card-left">2016</p>
-		  							<p class="card-text card-right">Scifi</p>
+		  							<p class="card-text card-right">5.5€</p>
 		  						</div>
 							</div>
-							<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+							<div class="card border-0"><img src="img/intothewild-2007-action.jpg" alt="Into the Wild" height="200px">
 								<div class="card-body">
-		  							<h5 class="card-title">Intouchables</h5>
-		  							<p class="card-text card-left">2011</p>
-		  							<p class="card-text card-right">Comedy</p>
+		  							<h5 class="card-title">Into the Wild</h5>
+		  							<p class="card-text card-left">2007</p>
+		  							<p class="card-text card-right">5.5€</p>
 		  						</div>
 							</div>
-							<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+							<div class="card border-0"><img src="img/T2trainspotting-2017-comedy.jpg" alt="T2 Trainspotting" height="200px">
 								<div class="card-body">
-		  							<h5 class="card-title">The English Patient</h5>
-		  							<p class="card-text card-left">1996</p>
-		  							<p class="card-text card-right">Drama</p>
-		  						</div>
-							</div>
-							<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
-								<div class="card-body">
-		  							<h5 class="card-title">Lord of the Ring</h5>
-		  							<p class="card-text card-left">2002</p>
-		  							<p class="card-text card-right">Adventure</p>
+		  							<h5 class="card-title">T2 Trainspotting</h5>
+		  							<p class="card-text card-left">2017</p>
+		  							<p class="card-text card-right">6€</p>
 		  						</div>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="card-deck card-shopmovies">
-							<div class="card border-0"><img src="img/inception-2010-scifi.jpg" alt="Inception" height="200px">
+							<div class="card border-0"><img src="img/Storks-2016-comedy.jpg" alt="Storks" height="200px">
 								<div class="card-body">
-		  							<h5 class="card-title">Inception</h5>
+		  							<h5 class="card-title">Storks</h5>
 		  							<p class="card-text card-left">2016</p>
-		  							<p class="card-text card-right">Scifi</p>
+		  							<p class="card-text card-right">8€</p>
 		  						</div>
 							</div>
-							<div class="card border-0"><img src="img/intouchables-2011-comedie.jpg" alt="Intouchables" height="200px">
+							<div class="card border-0"><img src="img/thesquare-2017.jpg" alt="The Square" height="200px">
 								<div class="card-body">
-		  							<h5 class="card-title">Intouchables</h5>
-		  							<p class="card-text card-left">2011</p>
-		  							<p class="card-text card-right">Comedy</p>
+		  							<h5 class="card-title">The Square</h5>
+		  							<p class="card-text card-left">2017</p>
+		  							<p class="card-text card-right">8€</p>
 		  						</div>
 							</div>
-							<div class="card border-0"><img src="img/lepatientanglais-1996-dramatique.jpg" alt="The English Patient" height="200px">
+							<div class="card border-0"><img src="img/ImitationGame-2014.jpg" alt="Imitation Game" height="200px">
 								<div class="card-body">
-		  							<h5 class="card-title">The English Patient</h5>
-		  							<p class="card-text card-left">1996</p>
-		  							<p class="card-text card-right">Drama</p>
+		  							<h5 class="card-title">Imitation Game</h5>
+		  							<p class="card-text card-left">2014</p>
+		  							<p class="card-text card-right">5.5€</p>
 		  						</div>
 							</div>
-							<div class="card border-0"><img src="img/lesdeuxtours-2002-aventure.jpg" alt="Lord of the Ring" height="200px">
+							<div class="card border-0"><img src="img/taken-2008.jpg" alt="Taken" height="200px">
 								<div class="card-body">
-		  							<h5 class="card-title">Lord of the Ring</h5>
-		  							<p class="card-text card-left">2002</p>
-		  							<p class="card-text card-right">Adventure</p>
+		  							<h5 class="card-title">Taken</h5>
+		  							<p class="card-text card-left">2008</p>
+		  							<p class="card-text card-right">3€</p>
 		  						</div>
 							</div>
 						</div>
@@ -655,27 +736,27 @@
 						</div>
 					<!-- First trailer -->
 					<div class="carousel-inner" role="listbox">
-		        <div class="carousel-item active">
-							<div class="card bg-dark mb-3 trailer-container" id="trailer1">
-		  					<div class="embed-responsive embed-responsive-16by9">
-		 					 		<iframe width="560" height="300" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		        		<div class="carousel-item active">
+		        			<div class="card bg-dark mb-3 trailer-container" id="trailer1">
+			  					<div class="embed-responsive embed-responsive-16by9">
+			 					 	<iframe width="560" height="300" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 								</div>
-		  					<div class="card-body">
-		    					<p class="card-title">Storks</p>
-		    					<p class="card-text">Story line:</p>
-		    					<p class="card-text">Release on:</p>
-		    					<p class="card-text">Genres:</p>
-		    					<p class="card-text">Price:</p>
-		  					</div>
+			  					<div class="card-body card-trailer">
+			    					<p class="card-title">Storks</p>
+			    					<p class="card-text">Story line:</p>
+			    					<p class="card-text">Release on:</p>
+			    					<p class="card-text">Genres:</p>
+			    					<p class="card-text">Price:</p>
+			  					</div>
+							</div>
 						</div>
-					</div>
 					<!-- Second trailer -->
-	        	<div class="carousel-item">
+	        			<div class="carousel-item">
 							<div class="card bg-dark mb-3 trailer-container" id="trailer2">
 	  						<div class="embed-responsive embed-responsive-16by9">
 	 					 			<iframe width="560" height="300" src="https://youtu.be/vzEcZJSdW-4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 								</div>
-		  					<div class="card-body">
+		  					<div class="card-body card-trailer">
 		    					<p class="card-title">Promised Land</p>
 		    					<p class="card-text">Story line:</p>
 		    					<p class="card-text">Release on:</p>
@@ -685,12 +766,12 @@
 							</div>
 						</div>
 					<!-- Third trailer -->
-	        	<div class="carousel-item">
+	        			<div class="carousel-item">
 							<div class="card bg-dark mb-3 trailer-container" id="trailer3">
 			  				<div class="embed-responsive embed-responsive-16by9">
 			 					 	<iframe width="560" height="300" src="https://www.youtube.com/embed/BXEZFd0RT5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 								</div>
-			  					<div class="card-body">
+			  					<div class="card-body card-trailer">
 			    					<p class="card-title">Storks</p>
 			    					<p class="card-text">Story line:</p>
 			    					<p class="card-text">Release on:</p>
@@ -794,7 +875,7 @@
 				</div>
 			</div>
 			<!-- Social media -->
-			<div class="connect">
+			<div class="connect" id="socialmediaconnect">
 				<p>Connect with us</p>
 				<div class="connect-socialmedia">
 					<a href="" class="border border-white fab fa-twitter" target="_blank"></a>
@@ -804,12 +885,6 @@
 					<a href="" class="border border-white fab fa-google-plus" target="_blank"></a>
 				</div>
 			</div>
-
-			<!-- COOKIE Alert -->
-			<div id="cookies" class="fixed-bottom text-center">
-				<span>We use cookies to enhance your web browsing experience. By continuing to browse the site you agree to our policy on cookie usage.</span>
-				<button type="button" name="button" id="btnCookie" class="btn btn-danger">Accept</button>
-			</div>
 		</footer>
 
 
@@ -817,6 +892,8 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<!-- Cookies script -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
 <!-- JavaScript -->
 <script type="text/javascript" src='script.js'></script>
 

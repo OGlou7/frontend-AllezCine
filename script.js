@@ -15,6 +15,27 @@
 // console.log(agePrompt);
 
 
+// Video modal
+$("#movie1").click(function(){
+$("#myModal").modal({backdrop: false});
+});
+
+$("#movie2").click(function(){
+$("#myModal2").modal({backdrop: false});
+});
+
+$("#movie3").click(function(){
+$("#myModal3").modal({backdrop: false});
+});
+
+$("#movie4").click(function(){
+$("#myModal4").modal({backdrop: false});
+});
+
+$("#movie5").click(function(){
+$("#myModal5").modal({backdrop: false});
+});
+
 // more movies
 $ (document).ready(function(){
 	$('.btnplus').click(function(){
@@ -48,12 +69,23 @@ text.setAttribute("class", "far fa-arrow-alt-circle-up");
 text.setAttribute("style", "font-size: 40px");
 lien.appendChild(text);
 button.setAttribute("class", "btn float-right fixed-bottom");
+button.setAttribute("id", "btnArrow");
 button.setAttribute("style", "background-color: transparent;");
 button.appendChild(lien);
 lien.setAttribute("href", "#top")
 
 var endFooter = document.getElementById("footer");
 endFooter.insertAdjacentElement("beforeend", button);
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("btnArrow").style.display= 'block';
+    } else {
+        document.getElementById("btnArrow").style.display = 'none';
+    }
+}
 
 //pop up form
 function myfunction() {
@@ -66,11 +98,19 @@ function myfunction() {
        }
 
 
-//btn trailer
-
-
-
 //COOKIE Alert
-$('#btnCookie').on("click",function(){
-	$("#cookies").hide();
-});
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#fb4446",
+      "text": "#080000"
+    },
+    "button": {
+      "background": "#fafafa"
+    }
+  },
+  "theme": "classic",
+  "type": "opt-out"
+})}); 
+
