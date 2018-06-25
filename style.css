@@ -19,6 +19,13 @@ h1, h2, h3, .form-control, .btn, .my-nav {
   text-transform: uppercase;
 }
 
+.title h2 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+h5 {font-size: 18px !important;}
+
 /*Header*/
 .my-nav {
 	position: absolute;
@@ -105,25 +112,36 @@ h1, h2, h3, .form-control, .btn, .my-nav {
 }
 
 /*Main-movies & Tv Shows*/
-h5{
-  font-size: 18px !important;
+.infomovie h5 {text-align: center}
+
+.infomovie .left {
+  display: inline;
+  float:left;
 }
+.infomovie .right {
+  display: inline-block;
+  float:right;
+}
+
 .main-movies {
 	margin-top: 25px;
   margin-bottom: 25px;
   justify-content: center;
   display: flex;
 }
+
 #firstmovie , #firsttvshow{
   margin-left: 100px;
   margin-right: 45px;
 }
+
 .col-md-2-5{
 position: relative;
 min-height: 1px;
 padding-right: 15px;
 padding-left: 15px;
 }
+
 .card-deck {
 	border: 0.5px solid lightgrey;
 	padding-top: 10px;
@@ -148,7 +166,7 @@ padding-left: 15px;
 }
 
 .btn-group {
-  margin-left: 65px;
+  margin-left: 113px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -220,7 +238,6 @@ padding-left: 15px;
   background: #ff346d;
 }
 
-
 /*Shop movies*/
 .shopmovies-container {
   margin-top: 20px;
@@ -228,18 +245,35 @@ padding-left: 15px;
 
 .mainrow {
   margin-left: 35px !important;
-  margin-right: 10px !important;
+  margin-right: 35px !important;
 }
-#trailer-box{
-  width: 40%;
 
+.shopinfo h5 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.shopinfo .left {
+  display: inline;
+  float:left;
+}
+.shopinfo .right {
+  display: inline-block;
+  float:right;
+  color: red;
 }
 
 .card-trailer p {color: #FB4446;}
 
+.card-trailer em {
+  color: white;
+  font-size: 12px;
+}
+
 .small-arrows {
   position: absolute;
-  left: 350px;
+  float: right;
+  margin-top: -50px;
 }
 
 /*Form*/
@@ -264,6 +298,7 @@ padding-left: 15px;
   height: 100px;
 }
 
+#sendmsg {margin-left: 5px}
 
 /*Footer*/
 footer {
@@ -273,13 +308,12 @@ footer {
 }
 
 footer p {text-transform: uppercase;}
-
 footer a {color: white;}
 footer a:hover {color: white;}
 
 .far {
+  color: #FB4446;
   border-radius: 50%;
-  border: 3px solid #FB4446;
   position: absolute;
   bottom: 20px;
   left: 1200px;
@@ -313,15 +347,31 @@ footer a:hover {color: white;}
   justify-content: center;
   padding-bottom: 20px;
 }
-@media screen and (max-width: 600px){
+
+/*Media queries*/
+@media screen and (max-width: 800px){
   .full-form , .subscribe {
     margin: 10px;
     width: 95%;
   }
-}
-@media screen and (max-width: 600px){
+
   .main-movies {
     margin: 40px;
     width: 95%;
   }
+
+  .btn-group {margin-left: 37px}
+
+  .mainrow .row
+  { padding-left: 60px;}
+
+  footer {padding: 10px}
+  footer .row {
+    display: none;
+  }
+
+  .subscribe {
+    padding-top: 10px;
+  }
 }
+
