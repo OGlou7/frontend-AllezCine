@@ -14,6 +14,55 @@
 // }
 // console.log(agePrompt);
 
+//Filter MOVIES
+$('#all').click(function() {
+  $('.actionM').show()
+  $('.comedyM').show()
+	$('.scifiM').show()
+})
+
+$('#action').click(function() {
+  $('.actionM').show()
+  $('.comedyM').hide()
+	$('.scifiM').hide()
+})
+
+$('#comedy').click(function() {
+  $('.actionM').hide()
+  $('.comedyM').show()
+	$('.scifiM').hide()
+})
+
+$('#scifi').click(function() {
+  $('.actionM').hide()
+  $('.comedyM').hide()
+	$('.scifiM').show()
+})
+
+//Filter TVSHOWS
+$('#alltv').click(function() {
+  $('.actiontvS').show()
+  $('.comedytvS').show()
+	$('.scifitvS').show()
+})
+
+$('#actiontv').click(function() {
+  $('.actiontvS').show()
+  $('.comedytvS').hide()
+	$('.scifitvS').hide()
+})
+
+$('#comedytv').click(function() {
+  $('.actiontvS').hide()
+  $('.comedytvS').show()
+	$('.scifitvS').hide()
+})
+
+$('#scifitv').click(function() {
+  $('.actiontvS').hide()
+  $('.comedytvS').hide()
+	$('.scifitvS').show()
+})
 
 // Video modal
 $("#movie1").click(function(){
@@ -46,7 +95,7 @@ $ (document).ready(function(){
 
 // more tv shows
 $ (document).ready(function(){
-	$('.btnplus').click(function(){
+	$('.btnplustv').click(function(){
 		$('#collapseMoreTv').toggle();
 
 	});
@@ -54,6 +103,13 @@ $ (document).ready(function(){
 
 //buttons more
 $(".btnplus").click(function() {
+    if ($(this).text() == "Less") {
+        $(this).text("More");
+    } else {
+        $(this).text("Less");
+    };
+});
+$(".btnplustv").click(function() {
     if ($(this).text() == "Less") {
         $(this).text("More");
     } else {
@@ -112,5 +168,4 @@ window.cookieconsent.initialise({
   },
   "theme": "classic",
   "type": "opt-out"
-})}); 
-
+})});
