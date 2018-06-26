@@ -1,0 +1,18 @@
+"short_name": "AllezCine",
+  "name": "AllezCine",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "#FB4446",
+  "icons": [
+      {
+      "src": "banner_blackkklansman_2018.jpg",
+      "type": "image/jpg",
+      "sizes": "192x192"
+      },
+      {
+      "src": "eldorado-2008-comedy.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+      }
+  ]
+}

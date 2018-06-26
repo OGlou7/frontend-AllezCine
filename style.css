@@ -131,8 +131,9 @@ h5 {font-size: 18px !important;}
 }
 
 #firstmovie , #firsttvshow{
-  margin-left: 100px;
-  margin-right: 45px;
+  margin-left: 135px;
+  margin-right: 5px !important;
+
 }
 
 .col-md-2-5{
@@ -142,31 +143,9 @@ padding-right: 15px;
 padding-left: 15px;
 }
 
-.card-deck {
-	border: 0.5px solid lightgrey;
-	padding-top: 10px;
-	padding-bottom: 5px;
-}
-
-.card-title {
-	font-size: 12px;
-	text-align: center;
-}
-
-.card-left {
-	font-size: 11px;
-	text-align: left;
-	position: absolute;
-}
-
-.card-right {
-	font-size: 11px;
-	text-align: right;
-	font-weight: bold;
-}
 
 .btn-group {
-  margin-left: 113px;
+  margin-left: 150px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -178,6 +157,7 @@ padding-left: 15px;
 .btnplus {
   margin-top: 10px;
   margin-bottom: 10px;
+
 }
 
 #collapseMore, #collapseMoreTv {
@@ -331,7 +311,7 @@ footer a:hover {color: white;}
 }
 
 .col-dates {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .col-img {
   align-items: flex-start;
@@ -374,4 +354,3 @@ footer a:hover {color: white;}
     padding-top: 10px;
   }
 }
-
