@@ -184,6 +184,20 @@ padding-left: 15px;
   -o-transition: all .25s ease;
   transition: all .25s ease;
 }
+
+.toptw{
+  padding-left: 99px;
+}
+.topfb{
+  padding-left: 55px;
+}
+.topdb{
+  padding-left: 71px;
+}
+.topgp{
+  padding-left: 44px;
+}
+
 .fab {
   font-size: 20px;
   color: #fff;
@@ -258,16 +272,23 @@ padding-left: 15px;
 
 /*Form*/
 .full-form {
+  width: 609px;
   position: relative;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 70px;
   margin-bottom: -100px;
   background-color: white;
   z-index: 10;
-  padding-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 8px;
   align-content: center;
-  padding-left: 5px;
-  padding-right: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.mapouter{
+  margin-left: 35px;
+  margin-bottom: -105px;
+  z-index: 10;
 }
 
 .form-control {
@@ -297,6 +318,10 @@ footer a:hover {color: white;}
   position: absolute;
   bottom: 20px;
   left: 1200px;
+}
+
+.col .Latest{
+  font-size: 9px;
 }
 
 .subscribe {

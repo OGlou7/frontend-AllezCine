@@ -15,5 +15,10 @@
       "type": "image/jpg",
       "sizes": "512x512"
       }
-  ]
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "white",
+  "scope": "/frontend-AllezCine/",
+  "theme_color": "white"
 }

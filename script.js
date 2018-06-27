@@ -117,6 +117,14 @@ $(".btnplustv").click(function() {
     };
 });
 
+//Click image Trailer
+$("#imgshop1, #imgshop2, #imgshop3, #imgshop4, #imgshop5, #imgshop6, #imgshop7, #imgshop8").on("click", function(){
+ let name = $(this).attr("id");
+ let name2 = Number(name.slice(7));
+ let name3 = name2-1;
+ $('#multi-item-example').carousel(name3);
+});
+
 //Bottom-up Arrow in pure Js
 var button = document.createElement("button");
 var lien = document.createElement("a");
