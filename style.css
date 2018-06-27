@@ -54,6 +54,9 @@ h5 {font-size: 18px !important;}
 .navbar-brand strong {
   color: white;}
 
+.fa-phone{
+  padding-left: 22px;
+}
 
 .title {
   border-left: 5px solid #FB4446;
@@ -104,6 +107,8 @@ h5 {font-size: 18px !important;}
 
 .modal-body{
   text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .modal-footer {
@@ -185,19 +190,6 @@ padding-left: 15px;
   transition: all .25s ease;
 }
 
-.toptw{
-  padding-left: 67px;
-}
-.topfb{
-  padding-left: 55px;
-}
-.topdb{
-  padding-left: 71px;
-}
-.topgp{
-  padding-left: 44px;
-}
-
 .fab {
   font-size: 20px;
   color: #fff;
@@ -215,6 +207,18 @@ padding-left: 15px;
   line-height: 40px!important;
   vertical-align: top!important;
 }
+#topfb{
+  padding-left: 75px;
+}
+#toptw{
+  padding-left: 88px;
+}
+#topdb{
+ padding-left: 89px;
+}
+#topgp{
+  padding-left: 48px;
+}
 .float-fb {
   top: 215px;
   background-color: #3f5e94;
@@ -227,7 +231,7 @@ padding-left: 15px;
   top: 325px;
   background-color:#da4b34;
 }
-.float-ig {
+.float-db {
   top: 270px;
   background: #ff346d;
 }
@@ -282,6 +286,7 @@ padding-left: 15px;
   align-content: center;
   padding-left: 5px;
   padding-right: 12px;
+  padding-top: 10px;
 }
 
 .form-control {
@@ -318,7 +323,8 @@ footer a:hover {color: white;}
 }
 
 .subscribe {
-  padding-top: 60px;
+  padding-top: 70px;
+  padding-bottom: 30px;
   text-align: center;
   color: #FB4446;
 }
@@ -329,12 +335,18 @@ footer a:hover {color: white;}
 }
 
 .col-dates {
-  margin-left: 30px;
+  margin-left: 38px;
+  color: #65686b;
 }
 .col-img {
   align-items: flex-start;
 }
-
+.col-movies{
+  color: #65686b;
+}
+.col-RM{
+  color: #65686b;
+}
 .connect {
   text-align: center;
   color: white;
