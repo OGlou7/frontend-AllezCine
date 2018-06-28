@@ -20,5 +20,5 @@
   "display": "standalone",
   "background_color": "white",
   "scope": "/frontend-AllezCine/",
-  "theme_color": "white"
+  "theme_color": "#FB4446"
 }
