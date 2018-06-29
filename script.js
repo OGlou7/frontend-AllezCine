@@ -136,6 +136,7 @@ text.setAttribute("class", "far fa-arrow-alt-circle-up");
 text.setAttribute("style", "font-size: 40px");
 lien.appendChild(text);
 button.setAttribute("class", "btn float-right fixed-bottom");
+button.setAttribute("aria-label","arrow");
 button.setAttribute("id", "btnArrow");
 button.setAttribute("style", "background-color: transparent;");
 button.appendChild(lien);
