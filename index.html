@@ -4,7 +4,7 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="Allezcine" content="Description">
+		<meta name="description" content="projet AllezCine">
 		<meta name="theme-color" content="#FB4446"/>
 
 		<title>Allezcine</title>
@@ -26,7 +26,7 @@
 		<section class="my-nav">
 			<nav class="navbar navbar-expand-lg sticky-top">
 				<a class="navbar-brand main-brand" href="#allezcarousel">Allez<strong>cine!</strong></a>
-				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" aria-labelledby='toggler'>
 				  <span class="navbar-toggler-icon fa fa-bars fa-1x"></span>
 				  </button>
 				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,7 +37,7 @@
 				        </a>
 				      </li>
 				      <li class="nav-item dropdown">
-				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-labelledby='dropdown'>Genres
 				        </a>
 						   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					          <a class="dropdown-item" href="#featured-movies">Action</a>
@@ -74,7 +74,7 @@
 		  <div class="carousel-inner">
 			<div class="big-title">
 				<h1>latest <strong>on</strong>line <strong>mo</strong>vies</h1>
-				<button type="button" name="button" class="btn btn-danger">WATCH TRAILER</button>
+				<button type="button" name="button" class="btn btn-danger" aria-labelledby='trailer'>WATCH TRAILER</button>
 			</div>
 		    <div class="carousel-item active">
 		      <img class="banner d-block w-100 " src="img/banner_kin2018.jpg" alt="Kin" height="650">
@@ -86,11 +86,11 @@
 		      <img class="banner d-block w-100" src="img/Banner_Ocean8.png" alt="Ocean8" height="650">
 		    </div>
 		  </div>
-		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" aria-labelledby='carousel'>
 		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Previous</span>
 		  </a>
-		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" aria-labelledby='indicators'>
 		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Next</span>
 		  </a>
@@ -100,9 +100,9 @@
 	<!-- Subscription line -->
 	<div class="subscription" id="homepage">
 		<p><i class="fas fa-phone">(+000)009 455 40 88</i></p>
-		<button type="button" class="btn btn-dark btn-login" data-toggle="modal" data-target="#exampleModalCenter">Login
+		<button type="button" class="btn btn-dark btn-login" data-toggle="modal" data-target="#exampleModalCenter" aria-labelledby='login'>Login
 		</button>
-		<button type="button" class="btn btn-dark btn-register" data-toggle="modal" data-target="#buttonRegister">Register</button>
+		<button type="button" class="btn btn-dark btn-register" data-toggle="modal" data-target="#buttonRegister"aria-labelledby='register'>Register</button>
 		<!-- btnLOGIN -->
 		<!-- Modal -->
 		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
@@ -110,7 +110,7 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <div class="modal-title" id="exampleModalCenterTitle1"><i class="fas fa-user-lock"></i></div>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-labelledby='centerTitle'>
 		         <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
@@ -123,8 +123,8 @@
 				    <label class="col-form-label"><b>Password</b></label>
 				    <input type="password" placeholder="Enter Password" name="psw" required>
 				</div>
-			    <button type="submit" class="btn btn-danger">Login</button>
-					<button type="submit" class="btn btn-danger">Create an account</button>
+			    <button type="submit" class="btn btn-danger" aria-labelledby='submit'>Login</button>
+					<button type="submit" class="btn btn-danger" aria-labelledby='account'>Create an account</button>
 					<label>
 						<input type="checkbox" checked="checked" name="remember">Remember me
 					</label>
@@ -133,7 +133,7 @@
 				<div class="container">
 					<span class="psw">Forgot <a href="#">password?</a></span>
 				</div>
-		        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+		        <button type="button" class="btn btn-danger" data-dismiss="modal" aria-labelledby='cancel'>Cancel</button>
 		      </div>
 		    </div>
 		  </div>
@@ -143,7 +143,7 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <div class="modal-title" id="exampleModalCenterTitle2"><i class="fas fa-user-edit"></i></div>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-labelledby='closem'>
 		        <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
@@ -164,14 +164,14 @@
 				    <label class="col-form-label"><b>Confirm Password</b></label>
 				    <input type="password" placeholder="Enter Password" name="cpsw" required>
 				</div>
-			    <button type="submit" class="btn btn-danger">Login</button>
-				<button type="submit" class="btn btn-danger">Create an account</button>
+			    <button type="submit" class="btn btn-danger" aria-labelledby='submit-login'>Login</button>
+				<button type="submit" class="btn btn-danger" aria-labelledby='submit-account'>Create an account</button>
 		      </div>
 		      <div class="modal-footer">
 				<label>
 					<input type="checkbox" checked="checked" name="condition" id="condition"> General Conditions of Use
 				</label>
-		        <button type="button" class="btn btn-danger" data-dismiss="modal">Register</button>
+		        <button type="button" class="btn btn-danger" data-dismiss="modal" aria-labelledby='registered'>Register</button>
 		      </div>
 		    </div>
 		  </div>
@@ -249,7 +249,7 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" aria-labelledby='X'>X</button>
 					<div class="embed-responsive embed-responsive-16by9">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/ZYWrgLTNKP4" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
@@ -266,7 +266,7 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" aria-labelledby='X1'>X</button>
 					<div class="embed-responsive embed-responsive-16by9">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/pFc6I0rgmgY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
@@ -283,7 +283,7 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" aria-labelledby='X2'>X</button>
 					<div class="embed-responsive embed-responsive-16by9">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/Ac5wrM2uYbk" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
@@ -300,7 +300,7 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" aria-labelledby='X3'>X</button>
 					<div class="embed-responsive embed-responsive-16by9">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/MFWF9dU5Zc0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
@@ -317,7 +317,7 @@
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-body">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" aria-labelledby='X4'>X</button>
 					<div class="embed-responsive embed-responsive-16by9">
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/Cs4y56AnaUg" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
@@ -335,10 +335,10 @@
 	<section class="featured-movies" id="featured-movies">
 		<div class="title"><h2>Featured Movies</h2></div>
 		<div class="filter btn-group">
-			<button type="button" class="btn btn-danger" id="all">All</button>
-			<button type="button" class="btn btn-danger" id="action">Action</button>
-			<button type="button" class="btn btn-danger" id="comedy">Comedy</button>
-			<button type="button" class="btn btn-danger" id="scifi">SciFi</button>
+			<button type="button" class="btn btn-danger" id="all" aria-labelledby='movie-all'>All</button>
+			<button type="button" class="btn btn-danger" id="action" aria-labelledby='movie-action'>Action</button>
+			<button type="button" class="btn btn-danger" id="comedy" aria-labelledby='movie-comedy'>Comedy</button>
+			<button type="button" class="btn btn-danger" id="scifi" aria-labelledby='movie-scifi'>SciFi</button>
 		</div>
 
 		<!-- First selection -->
@@ -457,7 +457,7 @@
 		</div>
 	<!-- Button -->
 	<div class="btn-container">
-		<button type="button" class="btn btn-danger btnplus" id="moreMovies">More</button>
+		<button type="button" class="btn btn-danger btnplus" id="moreMovies" aria-labelledby='more-movie'>More</button>
 	</div>
 	<!-- More movies when clicking the button -->
 	<div class="row collapse" id="collapseMore">
@@ -513,10 +513,10 @@
 		<div class="title"><h2>Featured TV Shows</h2></div>
 		<!-- Buttons with style -->
 		<div class="filter btn-group">
-			<button type="button" class="btn btn-danger" id="alltv">All</button>
-			<button type="button" class="btn btn-danger" id="actiontv">Action</button>
-			<button type="button" class="btn btn-danger" id="comedytv">Comedy</button>
-			<button type="button" class="btn btn-danger" id="scifitv">SciFi</button>
+			<button type="button" class="btn btn-danger" id="alltv" aria-labelledby='all-series'>All</button>
+			<button type="button" class="btn btn-danger" id="actiontv" aria-labelledby='action-series'>Action</button>
+			<button type="button" class="btn btn-danger" id="comedytv" aria-labelledby='comedy-series'>Comedy</button>
+			<button type="button" class="btn btn-danger" id="scifitv" aria-labelledby='scifi-series'>SciFi</button>
 		</div>
 
 		<!-- List of TvShows -->
@@ -636,7 +636,7 @@
 		</div>
 		<!-- Button more Tv Shows -->
 		<div class="btn-container">
-			<button type="button" class="btn btn-danger btnplustv" id="moreTv">More</button>
+			<button type="button" class="btn btn-danger btnplustv" id="moreTv" aria-labelledby='more-series'>More</button>
 		</div>
 		<!-- More tv shows when clicking button -->
 		<div class="row collapse" id="collapseMoreTv">
@@ -763,15 +763,15 @@
 				<div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5" id="trailer-box">
 					<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 						<div class="btn-group small-arrows" role="group" aria-label="Small Arrows">
-						  <button type="button" href="#multi-item-example" class="btn btn-dark btn-sm" id="previous" data-slide="prev">&#60;</button>
-						  <button type="button" href="#multi-item-example" class="btn btn-dark btn-sm" id="next" data-slide="next">&#62;</button>
+						  <button type="button" href="#multi-item-example" class="btn btn-dark btn-sm" id="previous" data-slide="prev" aria-labelledby='prev-arrow'>&#60;</button>
+						  <button type="button" href="#multi-item-example" class="btn btn-dark btn-sm" id="next" data-slide="next" aria-labelledby='next-arrow'>&#62;</button>
 						</div>
 						<!-- First trailer -->
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item">
 							<div class="card bg-dark mb-3 trailer-container" id="trailer1">
 									<div class="embed-responsive embed-responsive-16by9">
-									<iframe width="560" height="315" src="https://www.youtube.com/embed/ne6p6MfLBxc" rel="noopener" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/ne6p6MfLBxc" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 								</div>
 									<div class="card-body card-trailer">
 										<p class="card-title">HER</p>
@@ -922,7 +922,7 @@
 				      <input type="text" class="form-control form-message" id="message" placeholder="Your message">
 				    </div>
 				  </div>
-				  <button type="submit" class="btn btn-danger" id="sendmsg" onclick="myfunction()">Send message</button>
+				  <button type="submit" class="btn btn-danger" id="sendmsg" onclick="myfunction()" aria-labelledby='send'>Send message</button>
 				</form>
 			</div>
 		<div class="col" id="findmap">
@@ -930,7 +930,7 @@
 			<div id="findus"><h4>FIND US</h4></div>
 		</div>
 		<div class="col">
-			<div class="mapouter"><div class="gmap_canvas"><iframe width="522" height="320" id="gmap_canvas" src="https://maps.google.com/maps?q=brussels&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.webdesign-muenchen-pb.de"></a></div><style>.mapouter{text-align:right;height:315px;width:392px;}.gmap_canvas {overflow:hidden;background:none!important;height:315px;width:392px;}</style></div>	</div>
+			<div class="mapouter"><div class="gmap_canvas"><iframe width="522" height="320" id="gmap_canvas" src="https://maps.google.com/maps?q=brussels&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.webdesign-muenchen-pb.de" target="_blank" rel="noopener">></a></div><style>.mapouter{text-align:right;height:315px;width:392px;}.gmap_canvas {overflow:hidden;background:none!important;height:315px;width:392px;}</style></div>	</div>
 		</div>
 		</div>
 		</div>
@@ -943,7 +943,7 @@
 				<p>Subscribe to us</p>
 				<div>
 					<input type="text" class="form-subscribe" placeholder="Enter your email...">
-					<button type="submit" class="btn btn-danger mb-2">Subscribe</button>
+					<button type="submit" class="btn btn-danger mb-2" aria-labelledby='subscribe'>Subscribe</button>
 				</div>
 			</div>
 			<!-- 5 columns -->
