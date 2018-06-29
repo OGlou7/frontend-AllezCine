@@ -134,6 +134,7 @@ var lien = document.createElement("a");
 var text = document.createElement("i");
 text.setAttribute("class", "far fa-arrow-alt-circle-up");
 text.setAttribute("style", "font-size: 40px");
+text.setAttribute("aria-label","toparrow");
 lien.appendChild(text);
 button.setAttribute("class", "btn float-right fixed-bottom");
 button.setAttribute("aria-label","arrow");
