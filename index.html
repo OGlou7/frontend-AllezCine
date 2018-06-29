@@ -37,7 +37,7 @@
 				        </a>
 				      </li>
 				      <li class="nav-item dropdown">
-				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-labelledby='dropdown'>Genres
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Genres
 				        </a>
 						   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					          <a class="dropdown-item" href="#featured-movies">Action</a>
@@ -102,7 +102,7 @@
 		<p><i class="fas fa-phone">(+000)009 455 40 88</i></p>
 		<button type="button" class="btn btn-dark btn-login" data-toggle="modal" data-target="#exampleModalCenter" aria-labelledby='login'>Login
 		</button>
-		<button type="button" class="btn btn-dark btn-register" data-toggle="modal" data-target="#buttonRegister"aria-labelledby='register'>Register</button>
+		<button type="button" class="btn btn-dark btn-register" data-toggle="modal" data-target="#buttonRegister" aria-labelledby='register'>Register</button>
 		<!-- btnLOGIN -->
 		<!-- Modal -->
 		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
@@ -123,8 +123,8 @@
 				    <label class="col-form-label"><b>Password</b></label>
 				    <input type="password" placeholder="Enter Password" name="psw" required>
 				</div>
-			    <button type="submit" class="btn btn-danger" aria-labelledby='submit'>Login</button>
-					<button type="submit" class="btn btn-danger" aria-labelledby='account'>Create an account</button>
+			    <button type="submit" class="btn btn-danger" aria-labelledby='loginsubmit'>Login</button>
+					<button type="submit" class="btn btn-danger" aria-labelledby='accountsubmit'>Create an account</button>
 					<label>
 						<input type="checkbox" checked="checked" name="remember">Remember me
 					</label>
@@ -143,7 +143,7 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <div class="modal-title" id="exampleModalCenterTitle2"><i class="fas fa-user-edit"></i></div>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-labelledby='closem'>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-labelledby='closemodal'>
 		        <span aria-hidden="true">&times;</span>
 		        </button>
 		      </div>
@@ -335,10 +335,10 @@
 	<section class="featured-movies" id="featured-movies">
 		<div class="title"><h2>Featured Movies</h2></div>
 		<div class="filter btn-group">
-			<button type="button" class="btn btn-danger" id="all" aria-labelledby='movie-all'>All</button>
-			<button type="button" class="btn btn-danger" id="action" aria-labelledby='movie-action'>Action</button>
-			<button type="button" class="btn btn-danger" id="comedy" aria-labelledby='movie-comedy'>Comedy</button>
-			<button type="button" class="btn btn-danger" id="scifi" aria-labelledby='movie-scifi'>SciFi</button>
+			<button type="button" class="btn btn-danger" id="all" aria-labelledby='movieall'>All</button>
+			<button type="button" class="btn btn-danger" id="action" aria-labelledby='movieaction'>Action</button>
+			<button type="button" class="btn btn-danger" id="comedy" aria-labelledby='moviecomedy'>Comedy</button>
+			<button type="button" class="btn btn-danger" id="scifi" aria-labelledby='moviescifi'>SciFi</button>
 		</div>
 
 		<!-- First selection -->
@@ -513,10 +513,10 @@
 		<div class="title"><h2>Featured TV Shows</h2></div>
 		<!-- Buttons with style -->
 		<div class="filter btn-group">
-			<button type="button" class="btn btn-danger" id="alltv" aria-labelledby='all-series'>All</button>
-			<button type="button" class="btn btn-danger" id="actiontv" aria-labelledby='action-series'>Action</button>
-			<button type="button" class="btn btn-danger" id="comedytv" aria-labelledby='comedy-series'>Comedy</button>
-			<button type="button" class="btn btn-danger" id="scifitv" aria-labelledby='scifi-series'>SciFi</button>
+			<button type="button" class="btn btn-danger" id="alltv" aria-labelledby='allseries'>All</button>
+			<button type="button" class="btn btn-danger" id="actiontv" aria-labelledby='actionseries'>Action</button>
+			<button type="button" class="btn btn-danger" id="comedytv" aria-labelledby='comedyseries'>Comedy</button>
+			<button type="button" class="btn btn-danger" id="scifitv" aria-labelledby='scifiseries'>SciFi</button>
 		</div>
 
 		<!-- List of TvShows -->
