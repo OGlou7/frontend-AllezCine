@@ -1,20 +1,20 @@
 // age verification
-// $(document).ready(function(){
-//   var agePrompt = prompt("What is your age?");
-//
-//   function yourAge(){
-//
-//   if (agePrompt>=18){ alert('Welcome!');
-//   } else {
-//   alert('Sorry! Come back in a few years!');
-//   document.location="https://www.imdb.com";
-//   };
-//   }
-//   if(agePrompt != null){
-//     yourAge();
-//   }
-//   console.log(agePrompt);
-// });
+$(document).ready(function(){
+  var agePrompt = prompt("What is your age?");
+
+  function yourAge(){
+
+  if (agePrompt>=18){ alert('Welcome!');
+  } else {
+  alert('Sorry! Come back in a few years!');
+  document.location="https://www.imdb.com";
+  };
+  }
+  if(agePrompt != null){
+    yourAge();
+  }
+  console.log(agePrompt);
+});
 
 
 // Filter MOVIES
