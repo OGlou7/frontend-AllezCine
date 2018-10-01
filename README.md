@@ -1,24 +1,33 @@
-README
+#Allezciné Project
 
-## Projet Front-end AllezCine
+## Front-end project
 
-Projet à réaliser en 2 semaines (à partir du *18 Juin 2018*) durant formation BeCode (Team Johnson II).  
+2 weeks to realise this project (from *18 June 2018*) during BeCode Bootcamp (Team Johnson II).  
 
-Team de 2: Charlotte Tusset & Marie Louise Ogdoc. 
+Team of 2: Charlotte Tusset & Marie Louise Ogdoc. 
 
-[Repo git avec consignes](https://github.com/becodeorg/Johnson2/tree/master/projets/AllezCine). 
+[Repo git with instructions](https://github.com/becodeorg/Johnson2/tree/master/projets/AllezCine). 
 
 --- 
 
-### Objectif
+### Objectives
 
-Réaliser un one-page sur base d'un [layout](https://github.com/becodeorg/Johnson2/blob/master/projets/AllezCine/layout-one-v2.jpg).  
+To reaslie a onepage website based on a [layout](https://github.com/becodeorg/Johnson2/blob/master/projets/AllezCine/layout-one-v2.jpg).  
 
-Utiliser:
+Technologies:
 * HTML
 * CSS
 * JavaScript
 * jQuery
 * Responsive design
 * Bootstrap
-* Font Awesome Icons  
+* Font Awesome Icons 
+
+---
+
+### Screenshots 
+
+![Screenshot header](img/screenshots/screenshot1.png)  
+![Screenshot movies](img/screenshots/screenshot2.png)  
+![Screenshot tvshows](img/screenshots/screenshot3.png)     
+![Screenshot shop](img/screenshots/screenshot4.png)  
