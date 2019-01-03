@@ -4,7 +4,7 @@
 
 2 weeks to realise this project (from *18 June 2018*) during BeCode Bootcamp (Team Johnson II).  
 
-Team of 2: Charlotte Tusset & Marie Louise Ogdoc. 
+Made by Charlotte Tusset & Marie Louise Ogdoc. 
 
 [Repo git with instructions](https://github.com/becodeorg/Johnson2/tree/master/projets/AllezCine). 
 
@@ -12,7 +12,7 @@ Team of 2: Charlotte Tusset & Marie Louise Ogdoc.
 
 ### Objectives
 
-To reaslie a onepage website based on a [layout](https://github.com/becodeorg/Johnson2/blob/master/projets/AllezCine/layout-one-v2.jpg).  
+A onepage website based on a [layout](https://github.com/becodeorg/Johnson2/blob/master/projets/AllezCine/layout-one-v2.jpg).  
 
 Technologies:
 * HTML
