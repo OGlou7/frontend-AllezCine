@@ -4,7 +4,7 @@
 
 2 weeks to realise this project (from *18 June 2018*) during BeCode Bootcamp (Team Johnson II).  
 
-Made by Charlotte Tusset & Marie Louise Ogdoc. 
+Made by Charlotte Tusset & Louise OG
 
 [Repo git with instructions](https://github.com/becodeorg/Johnson2/tree/master/projets/AllezCine). 
 
